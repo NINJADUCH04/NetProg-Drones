@@ -13,16 +13,16 @@ class Coordinate{
 }
 
 public class Task{
-    private int taskID;
+    private String taskID;
     private List<Coordinate> coordiantes;
-    private String result;
-    private boolean completed;
+    private int result;
+    private String status;
     
-    public Task(int taskID, List<Coordinate> coordiantes){
+    public Task(String taskID, List<Coordinate> coordiantes){
         this.taskID = taskID;
         this.coordiantes = coordiantes;
         this.result = result;
-        this.completed = false;
+        this.status = "PENDING";
     } 
 }
 
