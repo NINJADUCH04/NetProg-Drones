@@ -1,7 +1,7 @@
 package com.example.Model;
 
 import java.util.List;
-
+import com.example.Utils.States;
 public class Task{
     private String taskID;
     private List<Coordinate> coordiantes;
@@ -12,12 +12,12 @@ public class Task{
         this.taskID = taskID;
         this.coordiantes = coordiantes;
         this.result = result;
-        this.status = "PENDING";
+        this.status = States.PENDING.name();
     } 
     
     public void assignResult(int result) {
         this.result = result;
-        this.status = "COMPLETED";
+        this.status = States.COMPLETED.name();
     }
 }
 

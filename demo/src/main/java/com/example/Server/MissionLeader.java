@@ -6,7 +6,7 @@ import java.io.*;
 import java.net.*;
 import java.util.*;
 import com.example.Model.*;
-
+import com.example.Utils.States;
 public class MissionLeader extends Thread {
 
     private DatagramSocket skt;
@@ -15,7 +15,7 @@ public class MissionLeader extends Thread {
     
     private ConcurrentHashMap<String, DroneManager> droneThreads = new ConcurrentHashMap<>();
 
-    private ConcurrentHashMap<String, Task> globalTasks = new ConcurrentHashMap<>();
+    private Task[] globalTasks;
 
 
     public MissionLeader(int port) throws SocketException {
@@ -26,14 +26,15 @@ public class MissionLeader extends Thread {
 
     private void initializeTasks() {
         
-        globalTasks.put("TASK_1", new Task("TASK_1", List.of(new Coordinate(0,0), new Coordinate(3,4))));
-        globalTasks.put("TASK_2", new Task("TASK_2", List.of(new Coordinate(3,0), new Coordinate(6,4))));
-        globalTasks.put("TASK_3", new Task("TASK_3", List.of(new Coordinate(0,4), new Coordinate(3,8))));
-        globalTasks.put("TASK_4", new Task("TASK_4", List.of(new Coordinate(3,4), new Coordinate(6,8))));
-        globalTasks.put("TASK_5", new Task("TASK_5", List.of(new Coordinate(1,1), new Coordinate(2,2)))); 
-        globalTasks.put("TASK_6", new Task("TASK_6", List.of(new Coordinate(4,5), new Coordinate(5,6))));
+        globalTasks = new Task[6];
+        globalTasks[0] = new Task("TASK_1", List.of(new Coordinate(0,0), new Coordinate(3,4)));
+        globalTasks[1] = new Task("TASK_2", List.of(new Coordinate(3,0), new Coordinate(6,4)));
+        globalTasks[2] = new Task("TASK_3", List.of(new Coordinate(0,4), new Coordinate(3,8)));
+        globalTasks[3] = new Task("TASK_4", List.of(new Coordinate(3,4), new Coordinate(6,8)));
+        globalTasks[4] = new Task("TASK_5", List.of(new Coordinate(1,1), new Coordinate(2,2))); 
+        globalTasks[5] = new Task("TASK_6", List.of(new Coordinate(4,5), new Coordinate(5,6)));
         
-        System.out.println("Initialized " + globalTasks.size() + " tasks covering the 6x8 grid.");
+        System.out.println("Initialized " + globalTasks.length + " tasks covering the 6x8 grid.");
     }
     @Override
     public void run() {
@@ -54,7 +55,7 @@ public class MissionLeader extends Thread {
                 String command = parts[1].toUpperCase();
                 String droneID = parts[0];
 
-                handleRouting(command, droneID, message, pktIn);
+                handleRouting(command, droneID, parts, pktIn);
             }
         } 
         catch (IOException e) {
@@ -64,22 +65,22 @@ public class MissionLeader extends Thread {
         }
     }
 
-    private void handleRouting(String command, String droneID, String message, DatagramPacket packet) {
+    private void handleRouting(String command, String droneID, String [] parts, DatagramPacket packet) {
         
-        if (command.equals("REGISTER")) {
+        if (command.equals(States.REGISTER.name())) {
             if (!droneThreads.containsKey(droneID)) {
                 
                 System.out.println("New Registration: " + droneID);
                 
-                DroneManager manager = new DroneManager(droneID, packet.getSocketAddress(), skt, tasksCoordinates);
+                DroneManager manager = new DroneManager(droneID, packet.getSocketAddress(), skt, globalTasks);
                 droneThreads.put(droneID, manager);
                 manager.start();
-            }
+            }//part of error control
         } 
         
         DroneManager manager = droneThreads.get(droneID);
         if (manager != null) {
-            manager.addMessageToQueue(message);
+            manager.addMessageToQueue(parts);
         } else {
             System.out.println("Unknown drone attempted to communicate: " + droneID);
         }
