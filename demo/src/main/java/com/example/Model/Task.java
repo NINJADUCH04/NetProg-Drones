@@ -14,6 +14,11 @@ public class Task{
         this.result = result;
         this.status = "PENDING";
     } 
+    
+    public void assignResult(int result) {
+        this.result = result;
+        this.status = "COMPLETED";
+    }
 }
 
 
