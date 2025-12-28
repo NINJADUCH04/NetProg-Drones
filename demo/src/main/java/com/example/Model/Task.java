@@ -6,7 +6,7 @@ import com.example.Utils.States;
 public class Task {
     private String taskID;
     private List<Coordinate> coordiantes;
-    private int result;
+    private String result;
     private String status;
     private String assignedDroneID;
 
@@ -14,7 +14,7 @@ public class Task {
         this.taskID = taskID;
         this.coordiantes = coordiantes;
         this.status = States.PENDING.name();
-        this.result = 0;
+        this.result = "";
         this.assignedDroneID = "NONE";
     }
 
@@ -26,7 +26,7 @@ public class Task {
         return coordiantes;
     }
 
-    public int getResult() {
+    public String getResult() {
         return result;
     }
 
@@ -46,11 +46,11 @@ public class Task {
         this.assignedDroneID = assignedDroneID;
     }
 
-    public void setResult(int result) {
+    public void setResult(String result) {
         this.result = result;
     }
 
-    public void assignResult(int result) {
+    public void assignResult(String result) {
         this.result = result;
         this.status = States.COMPLETED.name();
     }

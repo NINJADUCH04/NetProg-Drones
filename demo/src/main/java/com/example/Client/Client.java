@@ -1,7 +1,7 @@
 package com.example.Client;
+
 import com.example.Model.Drone;
 import com.example.Model.Task;
-
 import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
@@ -9,7 +9,7 @@ import java.net.InetAddress;
 import java.net.SocketException;
 import java.net.UnknownHostException;
 import java.util.Random;
-
+import com.example.Utils.States;
 
 public class Client extends Thread{
     private DatagramSocket datagramSocket;
@@ -100,13 +100,13 @@ public class Client extends Thread{
             i++;
             String DroneID = "DRONE-" + i;
             Client client = new Client(datagramSocket, inetAddress, DroneID);
-            client.register();
+            client.Register();
             client.start();
 
             new Thread(() -> {
             client.handleTaskCycle();
             }).start();
-            System.out.println("Successfully Launched: " + droneID);
+            System.out.println("Successfully Launched: " + DroneID);
 
             try {
             Thread.sleep(1000); 

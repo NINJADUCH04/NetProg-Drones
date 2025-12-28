@@ -39,9 +39,10 @@ public class DroneManager extends Thread {
         
             case States.SUBMIT_RESULT:
             for (int i = 0; i < globalTasks.length; i++) {
-                if (globalTasks[i].getStatus().equals(States.COMPLETED.name())) {
-                    globalTasks[i].setStatus(States.IN_PROGRESS.name());
-                    globalTasks[i].setResult();                    
+                if (globalTasks[i].getDroneID().equals(droneID)) {
+                    globalTasks[i].setStatus(States.COMPLETED.name());
+                    String result = messageParts[3] ;
+                    globalTasks[i].setResult(result);                    
                     break; 
                 }
             }
