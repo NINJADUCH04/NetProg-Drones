@@ -22,13 +22,35 @@ public class DroneManager extends Thread {
     }
 
     public void addMessageToQueue(String [] messageParts) {
-        if( messageParts[ 1 ].equals(States.REQUEST_TASK)) {
-            for(int i = 0; i < globalTasks.length; i++) {
-                if(globalTasks[i].getName().equals(messageParts[2]))
+        //String Command = messageParts[1];
+        States Command = States.valueOf(messageParts[1]);
+
+        switch (Command) {
+
+            case States.REQUEST_TASK:
+                for (int i = 0; i < globalTasks.length; i++) {
+                    if (globalTasks[i].getStatus().equals(States.PENDING.name())) {
+                        globalTasks[i].setStatus(States.IN_PROGRESS.name());
+                        globalTasks[i].setAssignedDroneID(droneID);
+                        break; 
+                    }
+                }
+                break;
+        
+            case States.SUBMIT_RESULT:
+            for (int i = 0; i < globalTasks.length; i++) {
+                if (globalTasks[i].getStatus().equals(States.COMPLETED.name())) {
+                    globalTasks[i].setStatus(States.IN_PROGRESS.name());
+                    globalTasks[i].setResult();                    
+                    break; 
+                }
             }
+                break;
+        
+            default:
+                System.out.println("Unknown command");
         }
         
-    }
 
 
     public void run() {
