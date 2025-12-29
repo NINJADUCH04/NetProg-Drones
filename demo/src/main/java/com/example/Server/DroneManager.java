@@ -1,62 +1,94 @@
 package com.example.Server;
 
+import java.io.IOException;
 import java.net.*;
 import java.util.HashMap;
 import java.util.AbstractMap.SimpleEntry;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import com.example.Utils.States;
+import com.example.Model.Coordinate;
 import com.example.Model.Task;
 
 public class DroneManager extends Thread {
-    Task [] globalTasks;
+    // Task [] globalTasks;
+    private TaskManager taskManager;
     private String droneID;
     private SocketAddress clientAddress;
     private DatagramSocket skt;
-    
-    public DroneManager(String droneID, SocketAddress clientAddress, DatagramSocket skt, Task [] globalTasks) {
+    private long lastSeenTime;
+    private boolean isRunning = true;
+
+    public DroneManager(String droneID, SocketAddress clientAddress, DatagramSocket skt, TaskManager taskManager) {
         this.droneID = droneID;
         this.clientAddress = clientAddress;
         this.skt = skt;
-        this.globalTasks = globalTasks;
+        this.taskManager = taskManager;
+        this.lastSeenTime = System.currentTimeMillis();
     }
 
-    public void addMessageToQueue(String [] messageParts) {
-        //String Command = messageParts[1];
-        States Command = States.valueOf(messageParts[1]);
+    public void addMessageToQueue(String[] messageParts) {
+        try {
+            this.lastSeenTime = System.currentTimeMillis();
+            States Command = States.valueOf(messageParts[1].toUpperCase());
 
-        switch (Command) {
+            switch (Command) {
+                case REQUEST_TASK:
+                    handleTaskRequest();
+                    break;
 
-            case States.REQUEST_TASK:
-                for (int i = 0; i < globalTasks.length; i++) {
-                    if (globalTasks[i].getStatus().equals(States.PENDING.name())) {
-                        globalTasks[i].setStatus(States.IN_PROGRESS.name());
-                        globalTasks[i].setAssignedDroneID(droneID);
-                        break; 
-                    }
-                }
-                break;
-        
-            case States.SUBMIT_RESULT:
-            for (int i = 0; i < globalTasks.length; i++) {
-                if (globalTasks[i].getDroneID().equals(droneID)) {
-                    globalTasks[i].setStatus(States.COMPLETED.name());
-                    String result = messageParts[3] ;
-                    globalTasks[i].setResult(result);                    
-                    break; 
-                }
+                case SUBMIT_RESULT:
+                    String taskID = messageParts[2];
+                    String result = messageParts[3];
+                    taskManager.submitTaskResult(droneID, result);
+                    System.out.println("Drone " + droneID + " submitted result for " + taskID);
+                    break;
+
+                case HEARTBEAT:
+                    break;
+
+                default:
+                    System.out.println("Unknown command from " + droneID);
             }
-                break;
-        
-            default:
-                System.out.println("Unknown command");
+        } catch (Exception e) {
+            System.err.println("Error processing message for " + droneID + ": " + e.getMessage());
         }
-        
-
-
-    public void run() {
-        while (true) {    
     }
+
+    private void handleTaskRequest() {
+        Task assigedTask = taskManager.assignNextTask(droneID);
+        if (assigedTask != null) {
+            try {
+                StringBuilder response = new StringBuilder(assigedTask.getTaskID());
+                for (Coordinate c : assigedTask.getCoordiantes()) {
+                    response.append(";").append(c.getX()).append(",").append(c.getY());
+                }
+
+                byte[] buffer = response.toString().getBytes();
+                DatagramPacket packet = new DatagramPacket(buffer, buffer.length, clientAddress);
+                skt.send(packet);
+                System.out.println("Sent task " + assigedTask.getTaskID() + " with 2 points to " + droneID);
+            } catch (IOException e) {
+                System.err.println("Failed to send task to " + droneID);
+            }
+        }
+    }
+
+    @Override
+    public void run() {
+        while (isRunning) {
+            if (System.currentTimeMillis() - lastSeenTime > 10000) {
+                System.out.println("Drone " + droneID + " timed out (LOST) !");
+                taskManager.releaseTaskIfLost(droneID);
+                isRunning = false;
+            }
+
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                isRunning = false;
+            }
+        }
     }
 
 }

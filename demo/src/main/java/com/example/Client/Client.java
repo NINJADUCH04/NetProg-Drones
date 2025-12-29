@@ -11,50 +11,52 @@ import java.net.UnknownHostException;
 import java.util.Random;
 import com.example.Utils.States;
 
-public class Client extends Thread{
+public class Client extends Thread {
     private DatagramSocket datagramSocket;
     private InetAddress inetAddress;
     private final int severPort = 9876;
     private Drone droneData;
-    
-    public Client(DatagramSocket datagramSocket, InetAddress inetAddress, String droneID){
+
+    public Client(DatagramSocket datagramSocket, InetAddress inetAddress, String droneID) {
         this.datagramSocket = datagramSocket;
         this.inetAddress = inetAddress;
         this.droneData = new Drone(droneID);
     }
-    
-    public void Register(){
-        try{
-            String registerMessage = "REGISTER:" + droneData.getDroneID();
+
+    public void Register() {
+        try {
+            String registerMessage = droneData.getDroneID() + ";REGISTER;";
             byte[] registerBuffer = registerMessage.getBytes();
-            DatagramPacket datagramPacket = new DatagramPacket(registerBuffer, registerBuffer.length, inetAddress, severPort);
+            DatagramPacket datagramPacket = new DatagramPacket(registerBuffer, registerBuffer.length, inetAddress,
+                    severPort);
             datagramSocket.send(datagramPacket);
-            System.out.println("Registration sent for Drone " + droneData.getDroneID());    
-        }catch(IOException e){
+            System.out.println("Registration sent for Drone " + droneData.getDroneID());
+        } catch (IOException e) {
             System.out.println(e.getMessage());
         }
     }
-    @Override    
-    public void run(){
-        try{
-            while(droneData.getState().equals("ALIVE")){
-                String heartbeatMessage = droneData.getDroneID() + ";HEARTBEAT," + droneData.getState() + ";";
-                byte [] hbBuffer = heartbeatMessage.getBytes();
+
+    @Override
+    public void run() {
+        try {
+            while (droneData.getState().equals("ALIVE")) {
+                String heartbeatMessage = droneData.getDroneID() + ";HEARTBEAT;" + droneData.getState() + ";";
+                byte[] hbBuffer = heartbeatMessage.getBytes();
 
                 DatagramPacket hpPacket = new DatagramPacket(hbBuffer, hbBuffer.length, inetAddress, severPort);
                 datagramSocket.send(hpPacket);
 
                 Thread.sleep(3000);
             }
-        }catch(Exception e){
+        } catch (Exception e) {
             System.out.println(e.getMessage());
         }
     }
-    
-    public void handleTaskCycle(){
-        try{
+
+    public void handleTaskCycle() {
+        try {
             String requestMessage = droneData.getDroneID() + ";REQUEST_TASK;";
-            byte [] requestBuffer = requestMessage.getBytes();
+            byte[] requestBuffer = requestMessage.getBytes();
             DatagramPacket rtPacket = new DatagramPacket(requestBuffer, requestBuffer.length, inetAddress, severPort);
             datagramSocket.send(rtPacket);
 
@@ -63,40 +65,34 @@ public class Client extends Thread{
             datagramSocket.receive(receivePacket);
 
             String receivedTask = new String(receivePacket.getData(), 0, receivePacket.getLength());
-            String[] receivedTaskArray =  receivedTask.split(";");
+            String[] parts = receivedTask.split(";");
 
-            String receivedTaskID = receivedTaskArray[0];
-            String result = droneData.getDroneID() + ";SUBMIT_RESULT;" + receivedTaskID + ";";
+            String receivedTaskID = parts[0];
+            String point1 = parts[1];
+            String point2 = parts[2];
+            System.out.println("Drone " + droneData.getDroneID() + " working on area from " + point1 + " to " + point2);
 
-            if (receivedTaskArray.length >= 2){
-                Random random = new Random();
-                for(int i=0; i < 4; i++){
-                    int numberOfsurvivors = random.nextInt(51);
-                    if(i == 3)
-                        result += numberOfsurvivors;
-                    else
-                        result += numberOfsurvivors + ",";
-                }
-                result += ";";
-            }
-            
-            
-            byte [] sendingTaskResultBuffer = result.getBytes();
-            DatagramPacket completedTaskPacket = new DatagramPacket(sendingTaskResultBuffer, sendingTaskResultBuffer.length, inetAddress, severPort);
+            int survivors = new Random().nextInt(51);
+            String resultMessage = droneData.getDroneID() + ";" + States.SUBMIT_RESULT.name() + ";" + receivedTaskID + ";"
+                    + survivors + ";";
+
+            byte[] sendingTaskResultBuffer = resultMessage.getBytes();
+            DatagramPacket completedTaskPacket = new DatagramPacket(sendingTaskResultBuffer,
+                    sendingTaskResultBuffer.length, inetAddress, severPort);
             datagramSocket.send(completedTaskPacket);
-            System.out.println("Task " + receivedTaskID + " finished and results sent.");
+            System.out.println("Drone " + droneData.getDroneID() + " sent survivors count (" + survivors + ") for task " + receivedTaskID);
 
-        }catch(IOException e){
+        } catch (IOException e) {
             System.out.println("Task Error: " + e.getMessage());
         }
     }
 
-    public static void main(String[] args) throws SocketException, UnknownHostException{
+    public static void main(String[] args) throws SocketException, UnknownHostException {
         DatagramSocket datagramSocket = new DatagramSocket();
         InetAddress inetAddress = InetAddress.getByName("localhost");
-        
+
         int i = 100;
-        while(true){
+        while (true) {
             i++;
             String DroneID = "DRONE-" + i;
             Client client = new Client(datagramSocket, inetAddress, DroneID);
@@ -104,15 +100,15 @@ public class Client extends Thread{
             client.start();
 
             new Thread(() -> {
-            client.handleTaskCycle();
+                client.handleTaskCycle();
             }).start();
             System.out.println("Successfully Launched: " + DroneID);
 
             try {
-            Thread.sleep(1000); 
+                Thread.sleep(1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        }       
+        }
     }
 }
