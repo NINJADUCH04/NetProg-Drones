@@ -1,0 +1,85 @@
+2025-12-29 23:25:07 - TaskManager: 6 Tasks initialized with 2 points each.
+2025-12-29 23:25:07 - Mission Leader initialized on port 9876
+2025-12-29 23:25:07 - Mission Leader Receiver Loop Started...
+2025-12-29 23:25:07 - Unknown drone attempted to communicate: DRONE-106
+2025-12-29 23:25:07 - Unknown drone attempted to communicate: DRONE-103
+2025-12-29 23:25:08 - Unknown drone attempted to communicate: DRONE-101
+2025-12-29 23:25:09 - Unknown drone attempted to communicate: DRONE-105
+2025-12-29 23:25:09 - Unknown drone attempted to communicate: DRONE-102
+2025-12-29 23:25:10 - Unknown drone attempted to communicate: DRONE-106
+2025-12-29 23:25:10 - Unknown drone attempted to communicate: DRONE-103
+2025-12-29 23:25:11 - Unknown drone attempted to communicate: DRONE-101
+2025-12-29 23:25:12 - Unknown drone attempted to communicate: DRONE-105
+2025-12-29 23:25:12 - Unknown drone attempted to communicate: DRONE-102
+2025-12-29 23:25:13 - Unknown drone attempted to communicate: DRONE-106
+2025-12-29 23:25:13 - Unknown drone attempted to communicate: DRONE-103
+2025-12-29 23:25:14 - Unknown drone attempted to communicate: DRONE-101
+2025-12-29 23:25:15 - Unknown drone attempted to communicate: DRONE-105
+2025-12-29 23:25:15 - Unknown drone attempted to communicate: DRONE-102
+2025-12-29 23:25:16 - Unknown drone attempted to communicate: DRONE-106
+2025-12-29 23:25:16 - Unknown drone attempted to communicate: DRONE-103
+2025-12-29 23:25:17 - Unknown drone attempted to communicate: DRONE-101
+2025-12-29 23:25:18 - Unknown drone attempted to communicate: DRONE-105
+2025-12-29 23:25:18 - Unknown drone attempted to communicate: DRONE-102
+2025-12-29 23:25:19 - Unknown drone attempted to communicate: DRONE-106
+2025-12-29 23:25:19 - Unknown drone attempted to communicate: DRONE-103
+2025-12-29 23:25:20 - Unknown drone attempted to communicate: DRONE-101
+2025-12-29 23:25:21 - Unknown drone attempted to communicate: DRONE-105
+2025-12-29 23:25:21 - Unknown drone attempted to communicate: DRONE-102
+2025-12-29 23:25:22 - Unknown drone attempted to communicate: DRONE-106
+2025-12-29 23:25:22 - Unknown drone attempted to communicate: DRONE-103
+2025-12-29 23:25:23 - Unknown drone attempted to communicate: DRONE-101
+2025-12-29 23:25:24 - Unknown drone attempted to communicate: DRONE-105
+2025-12-29 23:25:24 - Unknown drone attempted to communicate: DRONE-102
+2025-12-29 23:25:25 - Unknown drone attempted to communicate: DRONE-106
+2025-12-29 23:25:25 - Unknown drone attempted to communicate: DRONE-103
+2025-12-29 23:25:26 - Unknown drone attempted to communicate: DRONE-101
+2025-12-29 23:25:39 - Registration sent for Drone DRONE-101
+2025-12-29 23:25:39 - Successfully Launched: DRONE-101
+2025-12-29 23:25:49 - Registration sent for Drone DRONE-102
+2025-12-29 23:25:49 - Successfully Launched: DRONE-102
+2025-12-29 23:25:59 - Registration sent for Drone DRONE-103
+2025-12-29 23:25:59 - Successfully Launched: DRONE-103
+2025-12-29 23:26:09 - Registration sent for Drone DRONE-104
+2025-12-29 23:26:09 - Successfully Launched: DRONE-104
+2025-12-29 23:26:19 - Registration sent for Drone DRONE-105
+2025-12-29 23:26:19 - Successfully Launched: DRONE-105
+2025-12-29 23:26:29 - Registration sent for Drone DRONE-106
+2025-12-29 23:26:29 - Successfully Launched: DRONE-106
+2025-12-29 23:26:39 - Registration sent for Drone DRONE-107
+2025-12-29 23:26:39 - Successfully Launched: DRONE-107
+2025-12-29 23:26:49 - Registration sent for Drone DRONE-108
+2025-12-29 23:26:49 - Successfully Launched: DRONE-108
+2025-12-29 23:26:58 - TaskManager: 6 Tasks initialized with 2 points each.
+2025-12-29 23:26:58 - Mission Leader initialized on port 9876
+2025-12-29 23:26:58 - Mission Leader Receiver Loop Started...
+2025-12-29 23:27:06 - New Registration: DRONE-101
+2025-12-29 23:27:06 - Registration sent for Drone DRONE-101
+2025-12-29 23:27:06 - Successfully Launched: DRONE-101
+2025-12-29 23:27:06 - Sent task TASK_1 with 2 points to DRONE-101
+2025-12-29 23:27:06 - Drone [DRONE-101] Target Area: [0.0,0.0] , [2.0,0.0] , [0.0,4.0] , [2.0,4.0]
+2025-12-29 23:27:07 - Drone DRONE-101 is scanning... (Estimated time: 8s)
+2025-12-29 23:27:15 - Drone DRONE-101 COMPLETED scanning and found 46 survivors.
+2025-12-29 23:27:16 - TaskManager: TASK_1 is COMPLETED.
+2025-12-29 23:27:16 - Drone DRONE-101 sent survivors count (46) for task TASK_1
+2025-12-29 23:27:16 - Drone DRONE-101 COMPLETED TASK_1 with 46 survivors.
+2025-12-29 23:27:16 - Registration sent for Drone DRONE-102
+2025-12-29 23:27:16 - New Registration: DRONE-102
+2025-12-29 23:27:16 - Successfully Launched: DRONE-102
+2025-12-29 23:27:16 - Drone [DRONE-102] Target Area: [2.0,0.0] , [4.0,0.0] , [2.0,4.0] , [4.0,4.0]
+2025-12-29 23:27:16 - Drone DRONE-102 is scanning... (Estimated time: 7s)
+2025-12-29 23:27:16 - Sent task TASK_2 with 2 points to DRONE-102
+2025-12-29 23:27:24 - Drone DRONE-102 COMPLETED scanning and found 0 survivors.
+2025-12-29 23:27:24 - Drone DRONE-102 sent survivors count (0) for task TASK_2
+2025-12-29 23:27:24 - TaskManager: TASK_2 is COMPLETED.
+2025-12-29 23:27:24 - Drone DRONE-102 COMPLETED TASK_2 with 0 survivors.
+2025-12-29 23:27:26 - Registration sent for Drone DRONE-103
+2025-12-29 23:27:26 - New Registration: DRONE-103
+2025-12-29 23:27:26 - Successfully Launched: DRONE-103
+2025-12-29 23:27:26 - Sent task TASK_3 with 2 points to DRONE-103
+2025-12-29 23:27:26 - Drone [DRONE-103] Target Area: [4.0,0.0] , [6.0,0.0] , [4.0,4.0] , [6.0,4.0]
+2025-12-29 23:27:26 - Drone DRONE-103 is scanning... (Estimated time: 8s)
+2025-12-29 23:27:38 - Drone DRONE-101 timed out (LOST) !
+2025-12-29 23:27:38 - Drone DRONE-102 timed out (LOST) !
+2025-12-29 23:27:38 - Drone DRONE-103 timed out (LOST) !
+2025-12-29 23:27:38 - TaskManager: TASK_3 is RECOVERED and PENDING.

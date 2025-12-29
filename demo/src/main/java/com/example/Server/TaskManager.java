@@ -3,6 +3,7 @@ package com.example.Server;
 import com.example.Model.Task;
 import com.example.Model.Coordinate;
 import com.example.Utils.States;
+import com.example.Utils.DroneLogger;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,6 +24,7 @@ public class TaskManager {
         globalTasks.add(new Task("TASK_6", List.of(new Coordinate(4, 4), new Coordinate(6, 8))));
 
         System.out.println("TaskManager: 6 Tasks initialized with 2 points each.");
+        DroneLogger.logEvent("TaskManager: 6 Tasks initialized with 2 points each.");
     }
 
     public synchronized Task assignNextTask(String droneID) {
@@ -44,6 +46,7 @@ public class TaskManager {
             task.assignResult(result);
             task.setStatus(States.COMPLETED.name());
             System.out.println("TaskManager: " + task.getTaskID() + " is COMPLETED.");
+            DroneLogger.logEvent("TaskManager: " + task.getTaskID() + " is COMPLETED.");
             break;
         }
         }
@@ -57,6 +60,7 @@ public class TaskManager {
             task.setStatus(States.PENDING.name()); 
             task.setAssignedDroneID("NONE");
             System.out.println("TaskManager: " + task.getTaskID() + " is RECOVERED and PENDING.");
+            DroneLogger.logEvent("TaskManager: " + task.getTaskID() + " is RECOVERED and PENDING.");
             break; 
         }
         }

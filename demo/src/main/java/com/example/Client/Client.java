@@ -9,6 +9,7 @@ import java.net.SocketException;
 import java.net.UnknownHostException;
 import java.util.Random;
 import com.example.Utils.States;
+import com.example.Utils.DroneLogger;
 
 public class Client extends Thread {
     private DatagramSocket datagramSocket;
@@ -31,8 +32,10 @@ public class Client extends Thread {
                     severPort);
             datagramSocket.send(datagramPacket);
             System.out.println("Registration sent for Drone " + droneData.getDroneID());
+            DroneLogger.logEvent("Registration sent for Drone " + droneData.getDroneID());
         } catch (IOException e) {
             System.out.println(e.getMessage());
+            DroneLogger.logEvent(e.getMessage());
         }
     }
 
@@ -50,6 +53,7 @@ public class Client extends Thread {
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());
+            DroneLogger.logEvent(e.getMessage());
         }
     }
 
@@ -67,6 +71,7 @@ public class Client extends Thread {
             String receivedTask = new String(receivePacket.getData(), 0, receivePacket.getLength()).trim();
             if (receivedTask.equals("NO_MORE_TASKS")) {
                 System.out.println("Drone " + droneData.getDroneID() + ": Received [NO_MORE_TASKS]. Stopping...");
+                DroneLogger.logEvent("Drone " + droneData.getDroneID() + ": Received [NO_MORE_TASKS]. Stopping...");
                 droneData.setState("FINISHED");
                 availableTasks = false;
                 return;
@@ -89,6 +94,8 @@ public class Client extends Thread {
 
             System.out.println("Drone [" + droneData.getDroneID() + "] Target Area: "
                     + "[" + corner1 + "] , [" + corner2 + "] , [" + corner3 + "] , [" + corner4 + "]");
+            DroneLogger.logEvent("Drone [" + droneData.getDroneID() + "] Target Area: "
+                    + "[" + corner1 + "] , [" + corner2 + "] , [" + corner3 + "] , [" + corner4 + "]");
 
             // System.out.println("Drone " + droneData.getDroneID() + " is currently
             // scanning the area...");
@@ -96,6 +103,8 @@ public class Client extends Thread {
             Random rand = new Random();
             int workDuration = rand.nextInt(5000) + 4000;
             System.out.println("Drone " + droneData.getDroneID() + " is scanning... (Estimated time: "
+                    + (workDuration / 1000) + "s)");
+            DroneLogger.logEvent("Drone " + droneData.getDroneID() + " is scanning... (Estimated time: "
                     + (workDuration / 1000) + "s)");
             Thread.sleep(workDuration);
 
@@ -106,6 +115,8 @@ public class Client extends Thread {
 
             System.out.println(
                     "Drone " + droneData.getDroneID() + " COMPLETED scanning and found " + survivors + " survivors.");
+            DroneLogger.logEvent(
+                    "Drone " + droneData.getDroneID() + " COMPLETED scanning and found " + survivors + " survivors.");
 
             byte[] sendingTaskResultBuffer = resultMessage.getBytes();
             DatagramPacket completedTaskPacket = new DatagramPacket(sendingTaskResultBuffer,
@@ -113,9 +124,12 @@ public class Client extends Thread {
             datagramSocket.send(completedTaskPacket);
             System.out.println("Drone " + droneData.getDroneID() + " sent survivors count (" + survivors + ") for task "
                     + receivedTaskID);
+            DroneLogger.logEvent("Drone " + droneData.getDroneID() + " sent survivors count (" + survivors + ") for task "
+                    + receivedTaskID);
 
         } catch (Exception e) {
             System.out.println("Task Error: " + e.getMessage());
+            DroneLogger.logEvent("Task Error: " + e.getMessage());
         }
     }
 
@@ -136,11 +150,13 @@ public class Client extends Thread {
                 client.handleTaskCycle();
             }).start();
             System.out.println("Successfully Launched: " + DroneID);
+            DroneLogger.logEvent("Successfully Launched: " + DroneID);
 
             try {
                 Thread.sleep(10000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
+                DroneLogger.logEvent(e.getMessage());
             }
         }
     }

@@ -4,6 +4,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.io.*;
 import java.net.*;
 import com.example.Utils.States;
+import com.example.Utils.DroneLogger;
 
 public class MissionLeader extends Thread {
 
@@ -17,11 +18,13 @@ public class MissionLeader extends Thread {
         this.skt = new DatagramSocket(port);
         this.taskManager = new TaskManager();
         System.out.println("Mission Leader initialized on port " + port);
+        DroneLogger.logEvent("Mission Leader initialized on port " + port);
     }
 
     @Override
     public void run() {
         System.out.println("Mission Leader Receiver Loop Started...");
+        DroneLogger.logEvent("Mission Leader Receiver Loop Started...");
         try {
             while (true) {
                 byte[] buffer = new byte[BUFFER_SIZE];
@@ -41,6 +44,7 @@ public class MissionLeader extends Thread {
             }
         } catch (IOException e) {
             System.err.println("Server Socket Error: " + e.getMessage());
+            DroneLogger.logEvent("Server Socket Error: " + e.getMessage());
         } finally {
             if (skt != null && !skt.isClosed())
                 skt.close();
@@ -53,6 +57,7 @@ public class MissionLeader extends Thread {
             if (!droneThreads.containsKey(droneID)) {
 
                 System.out.println("New Registration: " + droneID);
+                DroneLogger.logEvent("New Registration: " + droneID);
 
                 DroneManager manager = new DroneManager(droneID, packet.getSocketAddress(), skt, taskManager);
                 droneThreads.put(droneID, manager);
@@ -66,6 +71,7 @@ public class MissionLeader extends Thread {
                 manager.addMessageToQueue(parts);
             } else {
                 System.out.println("Unknown drone attempted to communicate: " + droneID);
+                DroneLogger.logEvent("Unknown drone attempted to communicate: " + droneID);
             }
         }
     }
@@ -75,8 +81,10 @@ public class MissionLeader extends Thread {
             leader.start();
         } catch (SocketException e) {
             System.err.println("Could not start server: " + e.getMessage());
+            DroneLogger.logEvent("Could not start server: " + e.getMessage());
         } catch (Exception e) {
             System.err.println("Error: " + e.getMessage());
+            DroneLogger.logEvent("Error: " + e.getMessage());
         }
     }
 }
