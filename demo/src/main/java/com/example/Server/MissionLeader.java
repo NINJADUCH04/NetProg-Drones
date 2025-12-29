@@ -62,7 +62,7 @@ public class MissionLeader extends Thread {
                 System.out.println("New Registration: " + droneID);
                 DroneLogger.logEvent("New Registration: " + droneID);
 
-                DroneManager manager = new DroneManager(droneID, packet.getSocketAddress(), skt, taskManager);
+                DroneManager manager = new DroneManager(droneID, packet.getSocketAddress(), skt, taskManager, droneThreads);
                 droneThreads.put(droneID, manager);
                 manager.start();
             } // part of error control

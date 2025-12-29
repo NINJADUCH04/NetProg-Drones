@@ -101,7 +101,7 @@ public class Client extends Thread {
             // scanning the area...");
 
             Random rand = new Random();
-            int workDuration = rand.nextInt(5000) + 4000;
+            int workDuration = rand.nextInt(5000) + 6000;
             System.out.println("Drone " + droneData.getDroneID() + " is scanning... (Estimated time: "
                     + (workDuration / 1000) + "s)");
             DroneLogger.logEvent("Drone " + droneData.getDroneID() + " is scanning... (Estimated time: "

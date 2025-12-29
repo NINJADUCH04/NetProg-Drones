@@ -289,3 +289,4 @@ Key parameters (modifiable in code):
    ```
       Format: DRONE-ID;SUBMIT_RESULT;TASK-ID;SURVIVOR_COUNT;
       Example: DRONE-101;SUBMIT_RESULT;TASK_1;23;
+      

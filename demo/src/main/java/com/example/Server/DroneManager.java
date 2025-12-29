@@ -2,6 +2,8 @@ package com.example.Server;
 
 import java.io.IOException;
 import java.net.*;
+import java.util.concurrent.ConcurrentHashMap;
+
 import com.example.Utils.States;
 import com.example.Utils.DroneLogger;
 import com.example.Model.Coordinate;
@@ -12,15 +14,17 @@ public class DroneManager extends Thread {
     private String droneID;
     private SocketAddress clientAddress;
     private DatagramSocket skt;
+    private ConcurrentHashMap<String, DroneManager> droneThreads;
     private long lastSeenTime;
     private boolean isRunning = true;
 
-    public DroneManager(String droneID, SocketAddress clientAddress, DatagramSocket skt, TaskManager taskManager) {
+    public DroneManager(String droneID, SocketAddress clientAddress, DatagramSocket skt, TaskManager taskManager, ConcurrentHashMap<String, DroneManager> droneThreads) {
         this.droneID = droneID;
         this.clientAddress = clientAddress;
         this.skt = skt;
         this.taskManager = taskManager;
         this.lastSeenTime = System.currentTimeMillis();
+        this.droneThreads = droneThreads;
     }
 
     public void addMessageToQueue(String[] messageParts) {
@@ -105,10 +109,12 @@ public class DroneManager extends Thread {
     @Override
     public void run() {
         while (isRunning) {
-            if (System.currentTimeMillis() - lastSeenTime > 10000) {
+            if (System.currentTimeMillis() - lastSeenTime > 5000) {
                 System.out.println("Drone " + droneID + " timed out (LOST) !");
                 DroneLogger.logEvent("Drone " + droneID + " timed out (LOST) !");
                 taskManager.releaseTaskIfLost(droneID);
+                droneThreads.remove(droneID);
+                //skt.close();
                 isRunning = false;
             }
 

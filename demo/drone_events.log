@@ -154,3 +154,1016 @@
 2025-12-29 23:45:16 - Successfully Launched: DRONE-129
 2025-12-29 23:45:26 - Registration sent for Drone DRONE-130
 2025-12-29 23:45:26 - Successfully Launched: DRONE-130
+2025-12-29 23:45:36 - Registration sent for Drone DRONE-131
+2025-12-29 23:45:36 - Successfully Launched: DRONE-131
+2025-12-29 23:45:46 - Registration sent for Drone DRONE-132
+2025-12-29 23:45:46 - Successfully Launched: DRONE-132
+2025-12-29 23:45:56 - Registration sent for Drone DRONE-133
+2025-12-29 23:45:56 - Successfully Launched: DRONE-133
+2025-12-30 00:18:19 - TaskManager: 6 Tasks initialized with 2 points each.
+2025-12-30 00:18:19 - Mission Leader initialized on port 9876
+2025-12-30 00:18:19 - Mission Leader Receiver Loop Started...
+2025-12-30 00:18:28 - TaskManager: 6 Tasks initialized with 2 points each.
+2025-12-30 00:18:28 - Mission Leader initialized on port 9876
+2025-12-30 00:18:28 - Mission Leader Receiver Loop Started...
+2025-12-30 00:18:39 - Received message: DRONE-101;REGISTER;
+2025-12-30 00:18:39 - New Registration: DRONE-101
+2025-12-30 00:18:39 - Registration sent for Drone DRONE-101
+2025-12-30 00:18:39 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:18:39 - Successfully Launched: DRONE-101
+2025-12-30 00:18:39 - Received message: DRONE-101;REQUEST_TASK;
+2025-12-30 00:18:40 - Sent task TASK_1 with 2 points to DRONE-101
+2025-12-30 00:18:40 - Drone [DRONE-101] Target Area: [0.0,0.0] , [2.0,0.0] , [0.0,4.0] , [2.0,4.0]
+2025-12-30 00:18:40 - Drone DRONE-101 is scanning... (Estimated time: 8s)
+2025-12-30 00:18:42 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:18:45 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:18:48 - Drone DRONE-101 COMPLETED scanning and found 43 survivors.
+2025-12-30 00:18:48 - Received message: DRONE-101;SUBMIT_RESULT;TASK_1;43;
+2025-12-30 00:18:48 - TaskManager: TASK_1 is COMPLETED.
+2025-12-30 00:18:48 - Drone DRONE-101 sent survivors count (43) for task TASK_1
+2025-12-30 00:18:48 - Drone DRONE-101 COMPLETED TASK_1 with 43 survivors.
+2025-12-30 00:18:48 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:18:49 - Registration sent for Drone DRONE-102
+2025-12-30 00:18:49 - Received message: DRONE-102;REGISTER;
+2025-12-30 00:18:49 - New Registration: DRONE-102
+2025-12-30 00:18:49 - Successfully Launched: DRONE-102
+2025-12-30 00:18:49 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:18:49 - Received message: DRONE-102;REQUEST_TASK;
+2025-12-30 00:18:50 - Sent task TASK_2 with 2 points to DRONE-102
+2025-12-30 00:18:50 - Drone [DRONE-102] Target Area: [2.0,0.0] , [4.0,0.0] , [2.0,4.0] , [4.0,4.0]
+2025-12-30 00:18:50 - Drone DRONE-102 is scanning... (Estimated time: 4s)
+2025-12-30 00:18:51 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:18:52 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:18:54 - Drone DRONE-102 COMPLETED scanning and found 5 survivors.
+2025-12-30 00:18:54 - Drone DRONE-102 sent survivors count (5) for task TASK_2
+2025-12-30 00:18:54 - Received message: DRONE-102;SUBMIT_RESULT;TASK_2;5;
+2025-12-30 00:18:54 - TaskManager: TASK_2 is COMPLETED.
+2025-12-30 00:18:54 - Drone DRONE-102 COMPLETED TASK_2 with 5 survivors.
+2025-12-30 00:18:55 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:18:55 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:18:57 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:18:59 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:18:59 - Registration sent for Drone DRONE-103
+2025-12-30 00:18:59 - Received message: DRONE-103;REGISTER;
+2025-12-30 00:19:00 - New Registration: DRONE-103
+2025-12-30 00:19:00 - Successfully Launched: DRONE-103
+2025-12-30 00:19:00 - Received message: DRONE-103;HEARTBEAT;ALIVE;
+2025-12-30 00:19:00 - Received message: DRONE-103;REQUEST_TASK;
+2025-12-30 00:19:00 - Drone [DRONE-103] Target Area: [4.0,0.0] , [6.0,0.0] , [4.0,4.0] , [6.0,4.0]
+2025-12-30 00:19:00 - Drone DRONE-103 is scanning... (Estimated time: 5s)
+2025-12-30 00:19:00 - Sent task TASK_3 with 2 points to DRONE-103
+2025-12-30 00:19:01 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:19:02 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:19:03 - Received message: DRONE-103;HEARTBEAT;ALIVE;
+2025-12-30 00:19:04 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:19:05 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:19:05 - Drone DRONE-103 COMPLETED scanning and found 7 survivors.
+2025-12-30 00:19:05 - Drone DRONE-103 sent survivors count (7) for task TASK_3
+2025-12-30 00:19:05 - Received message: DRONE-103;SUBMIT_RESULT;TASK_3;7;
+2025-12-30 00:19:05 - TaskManager: TASK_3 is COMPLETED.
+2025-12-30 00:19:05 - Drone DRONE-103 COMPLETED TASK_3 with 7 survivors.
+2025-12-30 00:19:06 - Received message: DRONE-103;HEARTBEAT;ALIVE;
+2025-12-30 00:19:07 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:19:08 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:19:09 - Received message: DRONE-103;HEARTBEAT;ALIVE;
+2025-12-30 00:19:10 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:19:10 - Received message: DRONE-104;REGISTER;
+2025-12-30 00:19:10 - Registration sent for Drone DRONE-104
+2025-12-30 00:19:10 - New Registration: DRONE-104
+2025-12-30 00:19:10 - Successfully Launched: DRONE-104
+2025-12-30 00:19:10 - Received message: DRONE-104;REQUEST_TASK;
+2025-12-30 00:19:10 - Sent task TASK_4 with 2 points to DRONE-104
+2025-12-30 00:19:10 - Drone [DRONE-104] Target Area: [0.0,4.0] , [2.0,4.0] , [0.0,8.0] , [2.0,8.0]
+2025-12-30 00:19:10 - Drone DRONE-104 is scanning... (Estimated time: 5s)
+2025-12-30 00:19:11 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:19:12 - Received message: DRONE-103;HEARTBEAT;ALIVE;
+2025-12-30 00:19:13 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:19:14 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:19:15 - Received message: DRONE-103;HEARTBEAT;ALIVE;
+2025-12-30 00:19:15 - Drone DRONE-104 COMPLETED scanning and found 33 survivors.
+2025-12-30 00:19:15 - Drone DRONE-104 sent survivors count (33) for task TASK_4
+2025-12-30 00:19:15 - Received message: DRONE-104;SUBMIT_RESULT;TASK_4;33;
+2025-12-30 00:19:15 - TaskManager: TASK_4 is COMPLETED.
+2025-12-30 00:19:15 - Drone DRONE-104 COMPLETED TASK_4 with 33 survivors.
+2025-12-30 00:19:16 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:19:17 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:19:18 - Received message: DRONE-103;HEARTBEAT;ALIVE;
+2025-12-30 00:19:19 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:19:20 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:19:20 - Registration sent for Drone DRONE-105
+2025-12-30 00:19:20 - Received message: DRONE-105;REGISTER;
+2025-12-30 00:19:20 - New Registration: DRONE-105
+2025-12-30 00:19:20 - Successfully Launched: DRONE-105
+2025-12-30 00:19:20 - Received message: DRONE-105;HEARTBEAT;ALIVE;
+2025-12-30 00:19:20 - Received message: DRONE-105;REQUEST_TASK;
+2025-12-30 00:19:20 - Sent task TASK_5 with 2 points to DRONE-105
+2025-12-30 00:19:20 - Drone [DRONE-105] Target Area: [2.0,4.0] , [4.0,4.0] , [2.0,8.0] , [4.0,8.0]
+2025-12-30 00:19:20 - Drone DRONE-105 is scanning... (Estimated time: 4s)
+2025-12-30 00:19:21 - Received message: DRONE-103;HEARTBEAT;ALIVE;
+2025-12-30 00:19:22 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:19:22 - Drone DRONE-104 timed out (LOST) !
+2025-12-30 00:19:24 - Drone DRONE-105 COMPLETED scanning and found 12 survivors.
+2025-12-30 00:19:24 - Drone DRONE-105 sent survivors count (12) for task TASK_5
+2025-12-30 00:19:30 - Registration sent for Drone DRONE-106
+2025-12-30 00:19:30 - Successfully Launched: DRONE-106
+2025-12-30 00:19:40 - Registration sent for Drone DRONE-107
+2025-12-30 00:19:40 - Successfully Launched: DRONE-107
+2025-12-30 00:19:50 - Registration sent for Drone DRONE-108
+2025-12-30 00:19:50 - Successfully Launched: DRONE-108
+2025-12-30 00:20:00 - Registration sent for Drone DRONE-109
+2025-12-30 00:20:00 - Successfully Launched: DRONE-109
+2025-12-30 00:20:10 - Registration sent for Drone DRONE-110
+2025-12-30 00:20:10 - Successfully Launched: DRONE-110
+2025-12-30 00:20:20 - Registration sent for Drone DRONE-111
+2025-12-30 00:20:20 - Successfully Launched: DRONE-111
+2025-12-30 00:20:30 - Registration sent for Drone DRONE-112
+2025-12-30 00:20:30 - Successfully Launched: DRONE-112
+2025-12-30 00:20:40 - Registration sent for Drone DRONE-113
+2025-12-30 00:20:40 - Successfully Launched: DRONE-113
+2025-12-30 00:20:50 - Registration sent for Drone DRONE-114
+2025-12-30 00:20:50 - Successfully Launched: DRONE-114
+2025-12-30 00:21:00 - Registration sent for Drone DRONE-115
+2025-12-30 00:21:00 - Successfully Launched: DRONE-115
+2025-12-30 00:21:10 - Registration sent for Drone DRONE-116
+2025-12-30 00:21:10 - Successfully Launched: DRONE-116
+2025-12-30 00:21:20 - Registration sent for Drone DRONE-117
+2025-12-30 00:21:20 - Successfully Launched: DRONE-117
+2025-12-30 00:21:30 - Registration sent for Drone DRONE-118
+2025-12-30 00:21:30 - Successfully Launched: DRONE-118
+2025-12-30 00:21:40 - Registration sent for Drone DRONE-119
+2025-12-30 00:21:40 - Successfully Launched: DRONE-119
+2025-12-30 00:21:50 - Registration sent for Drone DRONE-120
+2025-12-30 00:21:50 - Successfully Launched: DRONE-120
+2025-12-30 00:22:00 - Registration sent for Drone DRONE-121
+2025-12-30 00:22:00 - Successfully Launched: DRONE-121
+2025-12-30 00:22:10 - Registration sent for Drone DRONE-122
+2025-12-30 00:22:10 - Successfully Launched: DRONE-122
+2025-12-30 00:22:20 - Registration sent for Drone DRONE-123
+2025-12-30 00:22:20 - Successfully Launched: DRONE-123
+2025-12-30 00:22:30 - Registration sent for Drone DRONE-124
+2025-12-30 00:22:30 - Successfully Launched: DRONE-124
+2025-12-30 00:22:40 - Registration sent for Drone DRONE-125
+2025-12-30 00:22:40 - Successfully Launched: DRONE-125
+2025-12-30 00:22:45 - TaskManager: 6 Tasks initialized with 2 points each.
+2025-12-30 00:22:45 - Mission Leader initialized on port 9876
+2025-12-30 00:22:45 - Mission Leader Receiver Loop Started...
+2025-12-30 00:22:46 - Received message: DRONE-107;HEARTBEAT;ALIVE;
+2025-12-30 00:22:46 - Unknown drone attempted to communicate: DRONE-107
+2025-12-30 00:22:46 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:22:46 - Unknown drone attempted to communicate: DRONE-101
+2025-12-30 00:22:46 - Received message: DRONE-116;HEARTBEAT;ALIVE;
+2025-12-30 00:22:46 - Unknown drone attempted to communicate: DRONE-116
+2025-12-30 00:22:46 - Received message: DRONE-113;HEARTBEAT;ALIVE;
+2025-12-30 00:22:46 - Unknown drone attempted to communicate: DRONE-113
+2025-12-30 00:22:46 - Received message: DRONE-119;HEARTBEAT;ALIVE;
+2025-12-30 00:22:46 - Unknown drone attempted to communicate: DRONE-119
+2025-12-30 00:22:46 - Received message: DRONE-110;HEARTBEAT;ALIVE;
+2025-12-30 00:22:46 - Unknown drone attempted to communicate: DRONE-110
+2025-12-30 00:22:46 - Received message: DRONE-122;HEARTBEAT;ALIVE;
+2025-12-30 00:22:46 - Unknown drone attempted to communicate: DRONE-122
+2025-12-30 00:22:46 - Received message: DRONE-125;HEARTBEAT;ALIVE;
+2025-12-30 00:22:46 - Unknown drone attempted to communicate: DRONE-125
+2025-12-30 00:22:47 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:22:47 - Unknown drone attempted to communicate: DRONE-102
+2025-12-30 00:22:47 - Received message: DRONE-105;HEARTBEAT;ALIVE;
+2025-12-30 00:22:47 - Unknown drone attempted to communicate: DRONE-105
+2025-12-30 00:22:47 - Received message: DRONE-111;HEARTBEAT;ALIVE;
+2025-12-30 00:22:47 - Unknown drone attempted to communicate: DRONE-111
+2025-12-30 00:22:47 - Received message: DRONE-108;HEARTBEAT;ALIVE;
+2025-12-30 00:22:47 - Unknown drone attempted to communicate: DRONE-108
+2025-12-30 00:22:47 - Received message: DRONE-114;HEARTBEAT;ALIVE;
+2025-12-30 00:22:47 - Unknown drone attempted to communicate: DRONE-114
+2025-12-30 00:22:47 - Received message: DRONE-120;HEARTBEAT;ALIVE;
+2025-12-30 00:22:47 - Unknown drone attempted to communicate: DRONE-120
+2025-12-30 00:22:47 - Received message: DRONE-117;HEARTBEAT;ALIVE;
+2025-12-30 00:22:47 - Unknown drone attempted to communicate: DRONE-117
+2025-12-30 00:22:47 - Received message: DRONE-123;HEARTBEAT;ALIVE;
+2025-12-30 00:22:47 - Unknown drone attempted to communicate: DRONE-123
+2025-12-30 00:22:48 - Received message: DRONE-109;HEARTBEAT;ALIVE;
+2025-12-30 00:22:48 - Unknown drone attempted to communicate: DRONE-109
+2025-12-30 00:22:48 - Received message: DRONE-112;HEARTBEAT;ALIVE;
+2025-12-30 00:22:48 - Unknown drone attempted to communicate: DRONE-112
+2025-12-30 00:22:48 - Received message: DRONE-103;HEARTBEAT;ALIVE;
+2025-12-30 00:22:48 - Unknown drone attempted to communicate: DRONE-103
+2025-12-30 00:22:48 - Received message: DRONE-115;HEARTBEAT;ALIVE;
+2025-12-30 00:22:48 - Unknown drone attempted to communicate: DRONE-115
+2025-12-30 00:22:48 - Received message: DRONE-118;HEARTBEAT;ALIVE;
+2025-12-30 00:22:48 - Unknown drone attempted to communicate: DRONE-118
+2025-12-30 00:22:48 - Received message: DRONE-106;HEARTBEAT;ALIVE;
+2025-12-30 00:22:48 - Unknown drone attempted to communicate: DRONE-106
+2025-12-30 00:22:48 - Received message: DRONE-121;HEARTBEAT;ALIVE;
+2025-12-30 00:22:48 - Unknown drone attempted to communicate: DRONE-121
+2025-12-30 00:22:48 - Received message: DRONE-124;HEARTBEAT;ALIVE;
+2025-12-30 00:22:48 - Unknown drone attempted to communicate: DRONE-124
+2025-12-30 00:22:49 - Received message: DRONE-107;HEARTBEAT;ALIVE;
+2025-12-30 00:22:49 - Unknown drone attempted to communicate: DRONE-107
+2025-12-30 00:22:49 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:22:49 - Unknown drone attempted to communicate: DRONE-101
+2025-12-30 00:22:49 - Received message: DRONE-116;HEARTBEAT;ALIVE;
+2025-12-30 00:22:49 - Unknown drone attempted to communicate: DRONE-116
+2025-12-30 00:22:49 - Received message: DRONE-113;HEARTBEAT;ALIVE;
+2025-12-30 00:22:49 - Unknown drone attempted to communicate: DRONE-113
+2025-12-30 00:22:49 - Received message: DRONE-119;HEARTBEAT;ALIVE;
+2025-12-30 00:22:49 - Unknown drone attempted to communicate: DRONE-119
+2025-12-30 00:22:49 - Received message: DRONE-122;HEARTBEAT;ALIVE;
+2025-12-30 00:22:49 - Unknown drone attempted to communicate: DRONE-122
+2025-12-30 00:22:49 - Received message: DRONE-110;HEARTBEAT;ALIVE;
+2025-12-30 00:22:49 - Unknown drone attempted to communicate: DRONE-110
+2025-12-30 00:22:49 - Received message: DRONE-125;HEARTBEAT;ALIVE;
+2025-12-30 00:22:49 - Unknown drone attempted to communicate: DRONE-125
+2025-12-30 00:22:50 - Registration sent for Drone DRONE-126
+2025-12-30 00:22:50 - Successfully Launched: DRONE-126
+2025-12-30 00:23:02 - TaskManager: 6 Tasks initialized with 2 points each.
+2025-12-30 00:23:02 - Mission Leader initialized on port 9876
+2025-12-30 00:23:02 - Mission Leader Receiver Loop Started...
+2025-12-30 00:23:12 - Received message: DRONE-101;REGISTER;
+2025-12-30 00:23:12 - New Registration: DRONE-101
+2025-12-30 00:23:12 - Registration sent for Drone DRONE-101
+2025-12-30 00:23:12 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:23:12 - Successfully Launched: DRONE-101
+2025-12-30 00:23:12 - Received message: DRONE-101;REQUEST_TASK;
+2025-12-30 00:23:12 - Sent task TASK_1 with 2 points to DRONE-101
+2025-12-30 00:23:12 - Drone [DRONE-101] Target Area: [0.0,0.0] , [2.0,0.0] , [0.0,4.0] , [2.0,4.0]
+2025-12-30 00:23:12 - Drone DRONE-101 is scanning... (Estimated time: 8s)
+2025-12-30 00:23:15 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:23:18 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:23:20 - Drone DRONE-101 COMPLETED scanning and found 44 survivors.
+2025-12-30 00:23:20 - Received message: DRONE-101;SUBMIT_RESULT;TASK_1;44;
+2025-12-30 00:23:20 - TaskManager: TASK_1 is COMPLETED.
+2025-12-30 00:23:20 - Drone DRONE-101 sent survivors count (44) for task TASK_1
+2025-12-30 00:23:20 - Drone DRONE-101 COMPLETED TASK_1 with 44 survivors.
+2025-12-30 00:23:21 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:23:22 - Registration sent for Drone DRONE-102
+2025-12-30 00:23:22 - Received message: DRONE-102;REGISTER;
+2025-12-30 00:23:22 - Successfully Launched: DRONE-102
+2025-12-30 00:23:22 - New Registration: DRONE-102
+2025-12-30 00:23:22 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:23:22 - Received message: DRONE-102;REQUEST_TASK;
+2025-12-30 00:23:22 - Sent task TASK_2 with 2 points to DRONE-102
+2025-12-30 00:23:22 - Drone [DRONE-102] Target Area: [2.0,0.0] , [4.0,0.0] , [2.0,4.0] , [4.0,4.0]
+2025-12-30 00:23:22 - Drone DRONE-102 is scanning... (Estimated time: 6s)
+2025-12-30 00:23:24 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:23:25 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:23:27 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:23:28 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:23:28 - Drone DRONE-102 COMPLETED scanning and found 9 survivors.
+2025-12-30 00:23:28 - Drone DRONE-102 sent survivors count (9) for task TASK_2
+2025-12-30 00:23:28 - Received message: DRONE-102;SUBMIT_RESULT;TASK_2;9;
+2025-12-30 00:23:28 - TaskManager: TASK_2 is COMPLETED.
+2025-12-30 00:23:28 - Drone DRONE-102 COMPLETED TASK_2 with 9 survivors.
+2025-12-30 00:23:30 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:23:31 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:23:32 - Registration sent for Drone DRONE-103
+2025-12-30 00:23:32 - Received message: DRONE-103;REGISTER;
+2025-12-30 00:23:32 - New Registration: DRONE-103
+2025-12-30 00:23:32 - Successfully Launched: DRONE-103
+2025-12-30 00:23:32 - Received message: DRONE-103;HEARTBEAT;ALIVE;
+2025-12-30 00:23:32 - Received message: DRONE-103;REQUEST_TASK;
+2025-12-30 00:23:32 - Sent task TASK_3 with 2 points to DRONE-103
+2025-12-30 00:23:32 - Drone [DRONE-103] Target Area: [4.0,0.0] , [6.0,0.0] , [4.0,4.0] , [6.0,4.0]
+2025-12-30 00:23:32 - Drone DRONE-103 is scanning... (Estimated time: 8s)
+2025-12-30 00:23:33 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:23:34 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:23:35 - Received message: DRONE-103;HEARTBEAT;ALIVE;
+2025-12-30 00:23:36 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:23:37 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:23:38 - Received message: DRONE-103;HEARTBEAT;ALIVE;
+2025-12-30 00:23:39 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:23:40 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:23:41 - Drone DRONE-103 COMPLETED scanning and found 17 survivors.
+2025-12-30 00:23:41 - Drone DRONE-103 sent survivors count (17) for task TASK_3
+2025-12-30 00:23:41 - Received message: DRONE-103;SUBMIT_RESULT;TASK_3;17;
+2025-12-30 00:23:41 - TaskManager: TASK_3 is COMPLETED.
+2025-12-30 00:23:41 - Drone DRONE-103 COMPLETED TASK_3 with 17 survivors.
+2025-12-30 00:23:41 - Received message: DRONE-103;HEARTBEAT;ALIVE;
+2025-12-30 00:23:42 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:23:42 - Registration sent for Drone DRONE-104
+2025-12-30 00:23:42 - Received message: DRONE-104;REGISTER;
+2025-12-30 00:23:42 - New Registration: DRONE-104
+2025-12-30 00:23:42 - Successfully Launched: DRONE-104
+2025-12-30 00:23:42 - Received message: DRONE-104;REQUEST_TASK;
+2025-12-30 00:23:42 - Sent task TASK_4 with 2 points to DRONE-104
+2025-12-30 00:23:42 - Drone [DRONE-104] Target Area: [0.0,4.0] , [2.0,4.0] , [0.0,8.0] , [2.0,8.0]
+2025-12-30 00:23:42 - Drone DRONE-104 is scanning... (Estimated time: 10s)
+2025-12-30 00:23:43 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:23:44 - Received message: DRONE-103;HEARTBEAT;ALIVE;
+2025-12-30 00:23:45 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:23:46 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:23:47 - Received message: DRONE-103;HEARTBEAT;ALIVE;
+2025-12-30 00:23:48 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:23:48 - Drone DRONE-104 timed out (LOST) !
+2025-12-30 00:23:48 - TaskManager: TASK_4 is RECOVERED and PENDING.
+2025-12-30 00:23:49 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:23:50 - Received message: DRONE-103;HEARTBEAT;ALIVE;
+2025-12-30 00:23:51 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:23:52 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:23:52 - Received message: DRONE-105;REGISTER;
+2025-12-30 00:23:52 - Registration sent for Drone DRONE-105
+2025-12-30 00:23:52 - New Registration: DRONE-105
+2025-12-30 00:23:52 - Successfully Launched: DRONE-105
+2025-12-30 00:23:52 - Received message: DRONE-105;HEARTBEAT;ALIVE;
+2025-12-30 00:23:52 - Received message: DRONE-105;REQUEST_TASK;
+2025-12-30 00:23:52 - Sent task TASK_4 with 2 points to DRONE-105
+2025-12-30 00:23:52 - Drone [DRONE-105] Target Area: [0.0,4.0] , [2.0,4.0] , [0.0,8.0] , [2.0,8.0]
+2025-12-30 00:23:52 - Drone DRONE-105 is scanning... (Estimated time: 8s)
+2025-12-30 00:23:52 - Drone DRONE-104 COMPLETED scanning and found 31 survivors.
+2025-12-30 00:23:52 - Drone DRONE-104 sent survivors count (31) for task TASK_4
+2025-12-30 00:23:52 - Received message: DRONE-104;SUBMIT_RESULT;TASK_4;31;
+2025-12-30 00:23:52 - Drone DRONE-104 COMPLETED TASK_4 with 31 survivors.
+2025-12-30 00:23:53 - Received message: DRONE-103;HEARTBEAT;ALIVE;
+2025-12-30 00:23:54 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:23:55 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:23:55 - Received message: DRONE-105;HEARTBEAT;ALIVE;
+2025-12-30 00:23:56 - Received message: DRONE-103;HEARTBEAT;ALIVE;
+2025-12-30 00:24:00 - Drone DRONE-105 COMPLETED scanning and found 11 survivors.
+2025-12-30 00:24:00 - Drone DRONE-105 sent survivors count (11) for task TASK_4
+2025-12-30 00:24:02 - Registration sent for Drone DRONE-106
+2025-12-30 00:24:02 - Successfully Launched: DRONE-106
+2025-12-30 00:24:12 - Registration sent for Drone DRONE-107
+2025-12-30 00:24:12 - Successfully Launched: DRONE-107
+2025-12-30 00:24:22 - Registration sent for Drone DRONE-108
+2025-12-30 00:24:22 - Successfully Launched: DRONE-108
+2025-12-30 00:24:32 - Registration sent for Drone DRONE-109
+2025-12-30 00:24:32 - Successfully Launched: DRONE-109
+2025-12-30 00:24:42 - Registration sent for Drone DRONE-110
+2025-12-30 00:24:42 - Successfully Launched: DRONE-110
+2025-12-30 00:24:52 - Registration sent for Drone DRONE-111
+2025-12-30 00:24:52 - Successfully Launched: DRONE-111
+2025-12-30 00:25:02 - Registration sent for Drone DRONE-112
+2025-12-30 00:25:02 - Successfully Launched: DRONE-112
+2025-12-30 00:25:12 - Registration sent for Drone DRONE-113
+2025-12-30 00:25:12 - Successfully Launched: DRONE-113
+2025-12-30 00:25:22 - Registration sent for Drone DRONE-114
+2025-12-30 00:25:22 - Successfully Launched: DRONE-114
+2025-12-30 00:25:32 - Registration sent for Drone DRONE-115
+2025-12-30 00:25:32 - Successfully Launched: DRONE-115
+2025-12-30 00:25:42 - Registration sent for Drone DRONE-116
+2025-12-30 00:25:42 - Successfully Launched: DRONE-116
+2025-12-30 00:25:52 - Registration sent for Drone DRONE-117
+2025-12-30 00:25:52 - Successfully Launched: DRONE-117
+2025-12-30 00:26:02 - Registration sent for Drone DRONE-118
+2025-12-30 00:26:02 - Successfully Launched: DRONE-118
+2025-12-30 00:26:12 - Registration sent for Drone DRONE-119
+2025-12-30 00:26:12 - Successfully Launched: DRONE-119
+2025-12-30 00:26:22 - Registration sent for Drone DRONE-120
+2025-12-30 00:26:22 - Successfully Launched: DRONE-120
+2025-12-30 00:26:32 - Registration sent for Drone DRONE-121
+2025-12-30 00:26:32 - Successfully Launched: DRONE-121
+2025-12-30 00:26:42 - Registration sent for Drone DRONE-122
+2025-12-30 00:26:42 - Successfully Launched: DRONE-122
+2025-12-30 00:26:52 - Registration sent for Drone DRONE-123
+2025-12-30 00:26:52 - Successfully Launched: DRONE-123
+2025-12-30 00:27:02 - Registration sent for Drone DRONE-124
+2025-12-30 00:27:02 - Successfully Launched: DRONE-124
+2025-12-30 00:27:12 - Registration sent for Drone DRONE-125
+2025-12-30 00:27:12 - Successfully Launched: DRONE-125
+2025-12-30 00:27:22 - Registration sent for Drone DRONE-126
+2025-12-30 00:27:22 - Successfully Launched: DRONE-126
+2025-12-30 00:27:32 - Registration sent for Drone DRONE-127
+2025-12-30 00:27:32 - Successfully Launched: DRONE-127
+2025-12-30 00:27:42 - Registration sent for Drone DRONE-128
+2025-12-30 00:27:42 - Successfully Launched: DRONE-128
+2025-12-30 00:27:52 - Registration sent for Drone DRONE-129
+2025-12-30 00:27:52 - Successfully Launched: DRONE-129
+2025-12-30 00:28:02 - Registration sent for Drone DRONE-130
+2025-12-30 00:28:02 - Successfully Launched: DRONE-130
+2025-12-30 00:28:12 - Registration sent for Drone DRONE-131
+2025-12-30 00:28:12 - Successfully Launched: DRONE-131
+2025-12-30 00:28:22 - Registration sent for Drone DRONE-132
+2025-12-30 00:28:22 - Successfully Launched: DRONE-132
+2025-12-30 00:28:32 - Registration sent for Drone DRONE-133
+2025-12-30 00:28:32 - Successfully Launched: DRONE-133
+2025-12-30 00:28:42 - Registration sent for Drone DRONE-134
+2025-12-30 00:28:42 - Successfully Launched: DRONE-134
+2025-12-30 00:28:52 - Registration sent for Drone DRONE-135
+2025-12-30 00:28:52 - Successfully Launched: DRONE-135
+2025-12-30 00:29:02 - Registration sent for Drone DRONE-136
+2025-12-30 00:29:02 - Successfully Launched: DRONE-136
+2025-12-30 00:29:12 - Registration sent for Drone DRONE-137
+2025-12-30 00:29:12 - Successfully Launched: DRONE-137
+2025-12-30 00:29:22 - Registration sent for Drone DRONE-138
+2025-12-30 00:29:22 - Successfully Launched: DRONE-138
+2025-12-30 00:29:32 - Registration sent for Drone DRONE-139
+2025-12-30 00:29:32 - Successfully Launched: DRONE-139
+2025-12-30 00:29:42 - Registration sent for Drone DRONE-140
+2025-12-30 00:29:42 - Successfully Launched: DRONE-140
+2025-12-30 00:29:52 - Registration sent for Drone DRONE-141
+2025-12-30 00:29:52 - Successfully Launched: DRONE-141
+2025-12-30 00:30:02 - Registration sent for Drone DRONE-142
+2025-12-30 00:30:02 - Successfully Launched: DRONE-142
+2025-12-30 00:30:12 - Registration sent for Drone DRONE-143
+2025-12-30 00:30:12 - Successfully Launched: DRONE-143
+2025-12-30 00:30:22 - Registration sent for Drone DRONE-144
+2025-12-30 00:30:22 - Successfully Launched: DRONE-144
+2025-12-30 00:30:32 - Registration sent for Drone DRONE-145
+2025-12-30 00:30:32 - Successfully Launched: DRONE-145
+2025-12-30 00:30:42 - Registration sent for Drone DRONE-146
+2025-12-30 00:30:42 - Successfully Launched: DRONE-146
+2025-12-30 00:30:52 - Registration sent for Drone DRONE-147
+2025-12-30 00:30:52 - Successfully Launched: DRONE-147
+2025-12-30 00:31:02 - Registration sent for Drone DRONE-148
+2025-12-30 00:31:02 - Successfully Launched: DRONE-148
+2025-12-30 00:31:12 - Registration sent for Drone DRONE-149
+2025-12-30 00:31:12 - Successfully Launched: DRONE-149
+2025-12-30 00:31:22 - Registration sent for Drone DRONE-150
+2025-12-30 00:31:22 - Successfully Launched: DRONE-150
+2025-12-30 00:31:32 - Registration sent for Drone DRONE-151
+2025-12-30 00:31:32 - Successfully Launched: DRONE-151
+2025-12-30 00:31:42 - Registration sent for Drone DRONE-152
+2025-12-30 00:31:42 - Successfully Launched: DRONE-152
+2025-12-30 00:31:52 - Registration sent for Drone DRONE-153
+2025-12-30 00:31:52 - Successfully Launched: DRONE-153
+2025-12-30 00:32:02 - Registration sent for Drone DRONE-154
+2025-12-30 00:32:02 - Successfully Launched: DRONE-154
+2025-12-30 00:32:12 - Registration sent for Drone DRONE-155
+2025-12-30 00:32:12 - Successfully Launched: DRONE-155
+2025-12-30 00:32:22 - Registration sent for Drone DRONE-156
+2025-12-30 00:32:22 - Successfully Launched: DRONE-156
+2025-12-30 00:32:32 - Registration sent for Drone DRONE-157
+2025-12-30 00:32:32 - Successfully Launched: DRONE-157
+2025-12-30 00:32:41 - TaskManager: 6 Tasks initialized with 2 points each.
+2025-12-30 00:32:41 - Mission Leader initialized on port 9876
+2025-12-30 00:32:41 - Mission Leader Receiver Loop Started...
+2025-12-30 00:32:41 - Received message: DRONE-103;HEARTBEAT;ALIVE;
+2025-12-30 00:32:41 - Unknown drone attempted to communicate: DRONE-103
+2025-12-30 00:32:41 - Received message: DRONE-106;HEARTBEAT;ALIVE;
+2025-12-30 00:32:41 - Unknown drone attempted to communicate: DRONE-106
+2025-12-30 00:32:41 - Received message: DRONE-118;HEARTBEAT;ALIVE;
+2025-12-30 00:32:41 - Unknown drone attempted to communicate: DRONE-118
+2025-12-30 00:32:41 - Received message: DRONE-115;HEARTBEAT;ALIVE;
+2025-12-30 00:32:41 - Unknown drone attempted to communicate: DRONE-115
+2025-12-30 00:32:41 - Received message: DRONE-112;HEARTBEAT;ALIVE;
+2025-12-30 00:32:41 - Unknown drone attempted to communicate: DRONE-112
+2025-12-30 00:32:41 - Received message: DRONE-109;HEARTBEAT;ALIVE;
+2025-12-30 00:32:41 - Unknown drone attempted to communicate: DRONE-109
+2025-12-30 00:32:41 - Received message: DRONE-121;HEARTBEAT;ALIVE;
+2025-12-30 00:32:41 - Unknown drone attempted to communicate: DRONE-121
+2025-12-30 00:32:41 - Received message: DRONE-124;HEARTBEAT;ALIVE;
+2025-12-30 00:32:41 - Unknown drone attempted to communicate: DRONE-124
+2025-12-30 00:32:41 - Received message: DRONE-130;HEARTBEAT;ALIVE;
+2025-12-30 00:32:41 - Unknown drone attempted to communicate: DRONE-130
+2025-12-30 00:32:41 - Received message: DRONE-133;HEARTBEAT;ALIVE;
+2025-12-30 00:32:41 - Unknown drone attempted to communicate: DRONE-133
+2025-12-30 00:32:41 - Received message: DRONE-127;HEARTBEAT;ALIVE;
+2025-12-30 00:32:41 - Unknown drone attempted to communicate: DRONE-127
+2025-12-30 00:32:41 - Received message: DRONE-136;HEARTBEAT;ALIVE;
+2025-12-30 00:32:41 - Unknown drone attempted to communicate: DRONE-136
+2025-12-30 00:32:41 - Received message: DRONE-139;HEARTBEAT;ALIVE;
+2025-12-30 00:32:41 - Unknown drone attempted to communicate: DRONE-139
+2025-12-30 00:32:41 - Received message: DRONE-142;HEARTBEAT;ALIVE;
+2025-12-30 00:32:41 - Unknown drone attempted to communicate: DRONE-142
+2025-12-30 00:32:41 - Received message: DRONE-151;HEARTBEAT;ALIVE;
+2025-12-30 00:32:41 - Unknown drone attempted to communicate: DRONE-151
+2025-12-30 00:32:41 - Received message: DRONE-145;HEARTBEAT;ALIVE;
+2025-12-30 00:32:41 - Unknown drone attempted to communicate: DRONE-145
+2025-12-30 00:32:41 - Received message: DRONE-154;HEARTBEAT;ALIVE;
+2025-12-30 00:32:41 - Unknown drone attempted to communicate: DRONE-154
+2025-12-30 00:32:41 - Received message: DRONE-148;HEARTBEAT;ALIVE;
+2025-12-30 00:32:41 - Unknown drone attempted to communicate: DRONE-148
+2025-12-30 00:32:41 - Received message: DRONE-157;HEARTBEAT;ALIVE;
+2025-12-30 00:32:41 - Unknown drone attempted to communicate: DRONE-157
+2025-12-30 00:32:42 - Received message: DRONE-107;HEARTBEAT;ALIVE;
+2025-12-30 00:32:42 - Unknown drone attempted to communicate: DRONE-107
+2025-12-30 00:32:42 - Received message: DRONE-113;HEARTBEAT;ALIVE;
+2025-12-30 00:32:42 - Unknown drone attempted to communicate: DRONE-113
+2025-12-30 00:32:42 - Received message: DRONE-116;HEARTBEAT;ALIVE;
+2025-12-30 00:32:42 - Unknown drone attempted to communicate: DRONE-116
+2025-12-30 00:32:42 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:32:42 - Unknown drone attempted to communicate: DRONE-101
+2025-12-30 00:32:42 - Received message: DRONE-122;HEARTBEAT;ALIVE;
+2025-12-30 00:32:42 - Unknown drone attempted to communicate: DRONE-122
+2025-12-30 00:32:42 - Received message: DRONE-110;HEARTBEAT;ALIVE;
+2025-12-30 00:32:42 - Unknown drone attempted to communicate: DRONE-110
+2025-12-30 00:32:42 - Received message: DRONE-119;HEARTBEAT;ALIVE;
+2025-12-30 00:32:42 - Unknown drone attempted to communicate: DRONE-119
+2025-12-30 00:32:42 - Received message: DRONE-128;HEARTBEAT;ALIVE;
+2025-12-30 00:32:42 - Unknown drone attempted to communicate: DRONE-128
+2025-12-30 00:32:42 - Received message: DRONE-125;HEARTBEAT;ALIVE;
+2025-12-30 00:32:42 - Unknown drone attempted to communicate: DRONE-125
+2025-12-30 00:32:42 - Received message: DRONE-131;HEARTBEAT;ALIVE;
+2025-12-30 00:32:42 - Unknown drone attempted to communicate: DRONE-131
+2025-12-30 00:32:42 - Received message: DRONE-134;HEARTBEAT;ALIVE;
+2025-12-30 00:32:42 - Unknown drone attempted to communicate: DRONE-134
+2025-12-30 00:32:42 - Received message: DRONE-140;HEARTBEAT;ALIVE;
+2025-12-30 00:32:42 - Unknown drone attempted to communicate: DRONE-140
+2025-12-30 00:32:42 - Received message: DRONE-137;HEARTBEAT;ALIVE;
+2025-12-30 00:32:42 - Unknown drone attempted to communicate: DRONE-137
+2025-12-30 00:32:42 - Received message: DRONE-143;HEARTBEAT;ALIVE;
+2025-12-30 00:32:42 - Unknown drone attempted to communicate: DRONE-143
+2025-12-30 00:32:42 - Received message: DRONE-149;HEARTBEAT;ALIVE;
+2025-12-30 00:32:42 - Unknown drone attempted to communicate: DRONE-149
+2025-12-30 00:32:42 - Received message: DRONE-146;HEARTBEAT;ALIVE;
+2025-12-30 00:32:42 - Unknown drone attempted to communicate: DRONE-146
+2025-12-30 00:32:42 - Received message: DRONE-152;HEARTBEAT;ALIVE;
+2025-12-30 00:32:42 - Unknown drone attempted to communicate: DRONE-152
+2025-12-30 00:32:42 - Received message: DRONE-155;HEARTBEAT;ALIVE;
+2025-12-30 00:32:42 - Unknown drone attempted to communicate: DRONE-155
+2025-12-30 00:32:42 - Received message: DRONE-158;REGISTER;
+2025-12-30 00:32:42 - New Registration: DRONE-158
+2025-12-30 00:32:42 - Registration sent for Drone DRONE-158
+2025-12-30 00:32:42 - Received message: DRONE-158;HEARTBEAT;ALIVE;
+2025-12-30 00:32:42 - Successfully Launched: DRONE-158
+2025-12-30 00:32:42 - Received message: DRONE-158;REQUEST_TASK;
+2025-12-30 00:32:42 - Drone [DRONE-158] Target Area: [0.0,0.0] , [2.0,0.0] , [0.0,4.0] , [2.0,4.0]
+2025-12-30 00:32:42 - Drone DRONE-158 is scanning... (Estimated time: 10s)
+2025-12-30 00:32:42 - Sent task TASK_1 with 2 points to DRONE-158
+2025-12-30 00:32:43 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:32:43 - Unknown drone attempted to communicate: DRONE-102
+2025-12-30 00:32:43 - Received message: DRONE-105;HEARTBEAT;ALIVE;
+2025-12-30 00:32:43 - Unknown drone attempted to communicate: DRONE-105
+2025-12-30 00:32:43 - Received message: DRONE-120;HEARTBEAT;ALIVE;
+2025-12-30 00:32:43 - Unknown drone attempted to communicate: DRONE-120
+2025-12-30 00:32:43 - Received message: DRONE-111;HEARTBEAT;ALIVE;
+2025-12-30 00:32:43 - Unknown drone attempted to communicate: DRONE-111
+2025-12-30 00:32:43 - Received message: DRONE-117;HEARTBEAT;ALIVE;
+2025-12-30 00:32:43 - Unknown drone attempted to communicate: DRONE-117
+2025-12-30 00:32:43 - Received message: DRONE-114;HEARTBEAT;ALIVE;
+2025-12-30 00:32:43 - Unknown drone attempted to communicate: DRONE-114
+2025-12-30 00:32:43 - Received message: DRONE-108;HEARTBEAT;ALIVE;
+2025-12-30 00:32:43 - Unknown drone attempted to communicate: DRONE-108
+2025-12-30 00:32:43 - Received message: DRONE-126;HEARTBEAT;ALIVE;
+2025-12-30 00:32:43 - Unknown drone attempted to communicate: DRONE-126
+2025-12-30 00:32:43 - Received message: DRONE-123;HEARTBEAT;ALIVE;
+2025-12-30 00:32:43 - Unknown drone attempted to communicate: DRONE-123
+2025-12-30 00:32:43 - Received message: DRONE-132;HEARTBEAT;ALIVE;
+2025-12-30 00:32:43 - Unknown drone attempted to communicate: DRONE-132
+2025-12-30 00:32:43 - Received message: DRONE-129;HEARTBEAT;ALIVE;
+2025-12-30 00:32:43 - Unknown drone attempted to communicate: DRONE-129
+2025-12-30 00:32:43 - Received message: DRONE-135;HEARTBEAT;ALIVE;
+2025-12-30 00:32:43 - Unknown drone attempted to communicate: DRONE-135
+2025-12-30 00:32:43 - Received message: DRONE-141;HEARTBEAT;ALIVE;
+2025-12-30 00:32:43 - Unknown drone attempted to communicate: DRONE-141
+2025-12-30 00:32:43 - Received message: DRONE-138;HEARTBEAT;ALIVE;
+2025-12-30 00:32:43 - Unknown drone attempted to communicate: DRONE-138
+2025-12-30 00:32:43 - Received message: DRONE-144;HEARTBEAT;ALIVE;
+2025-12-30 00:32:43 - Unknown drone attempted to communicate: DRONE-144
+2025-12-30 00:32:43 - Received message: DRONE-147;HEARTBEAT;ALIVE;
+2025-12-30 00:32:43 - Unknown drone attempted to communicate: DRONE-147
+2025-12-30 00:32:43 - Received message: DRONE-150;HEARTBEAT;ALIVE;
+2025-12-30 00:32:43 - Unknown drone attempted to communicate: DRONE-150
+2025-12-30 00:32:43 - Received message: DRONE-153;HEARTBEAT;ALIVE;
+2025-12-30 00:32:43 - Unknown drone attempted to communicate: DRONE-153
+2025-12-30 00:32:43 - Received message: DRONE-156;HEARTBEAT;ALIVE;
+2025-12-30 00:32:43 - Unknown drone attempted to communicate: DRONE-156
+2025-12-30 00:32:44 - Received message: DRONE-103;HEARTBEAT;ALIVE;
+2025-12-30 00:32:44 - Unknown drone attempted to communicate: DRONE-103
+2025-12-30 00:32:44 - Received message: DRONE-106;HEARTBEAT;ALIVE;
+2025-12-30 00:32:44 - Unknown drone attempted to communicate: DRONE-106
+2025-12-30 00:32:44 - Received message: DRONE-115;HEARTBEAT;ALIVE;
+2025-12-30 00:32:44 - Unknown drone attempted to communicate: DRONE-115
+2025-12-30 00:32:44 - Received message: DRONE-118;HEARTBEAT;ALIVE;
+2025-12-30 00:32:44 - Unknown drone attempted to communicate: DRONE-118
+2025-12-30 00:32:44 - Received message: DRONE-112;HEARTBEAT;ALIVE;
+2025-12-30 00:32:44 - Unknown drone attempted to communicate: DRONE-112
+2025-12-30 00:32:44 - Received message: DRONE-109;HEARTBEAT;ALIVE;
+2025-12-30 00:32:44 - Unknown drone attempted to communicate: DRONE-109
+2025-12-30 00:32:44 - Received message: DRONE-121;HEARTBEAT;ALIVE;
+2025-12-30 00:32:44 - Unknown drone attempted to communicate: DRONE-121
+2025-12-30 00:32:44 - Received message: DRONE-124;HEARTBEAT;ALIVE;
+2025-12-30 00:32:44 - Unknown drone attempted to communicate: DRONE-124
+2025-12-30 00:32:44 - Received message: DRONE-130;HEARTBEAT;ALIVE;
+2025-12-30 00:32:44 - Unknown drone attempted to communicate: DRONE-130
+2025-12-30 00:32:44 - Received message: DRONE-136;HEARTBEAT;ALIVE;
+2025-12-30 00:32:44 - Unknown drone attempted to communicate: DRONE-136
+2025-12-30 00:32:44 - Received message: DRONE-127;HEARTBEAT;ALIVE;
+2025-12-30 00:32:44 - Unknown drone attempted to communicate: DRONE-127
+2025-12-30 00:32:44 - Received message: DRONE-133;HEARTBEAT;ALIVE;
+2025-12-30 00:32:44 - Unknown drone attempted to communicate: DRONE-133
+2025-12-30 00:32:44 - Received message: DRONE-139;HEARTBEAT;ALIVE;
+2025-12-30 00:32:44 - Unknown drone attempted to communicate: DRONE-139
+2025-12-30 00:32:44 - Received message: DRONE-142;HEARTBEAT;ALIVE;
+2025-12-30 00:32:44 - Unknown drone attempted to communicate: DRONE-142
+2025-12-30 00:32:44 - Received message: DRONE-151;HEARTBEAT;ALIVE;
+2025-12-30 00:32:44 - Unknown drone attempted to communicate: DRONE-151
+2025-12-30 00:32:44 - Received message: DRONE-154;HEARTBEAT;ALIVE;
+2025-12-30 00:32:44 - Unknown drone attempted to communicate: DRONE-154
+2025-12-30 00:32:44 - Received message: DRONE-145;HEARTBEAT;ALIVE;
+2025-12-30 00:32:44 - Unknown drone attempted to communicate: DRONE-145
+2025-12-30 00:32:44 - Received message: DRONE-148;HEARTBEAT;ALIVE;
+2025-12-30 00:32:44 - Unknown drone attempted to communicate: DRONE-148
+2025-12-30 00:32:44 - Received message: DRONE-157;HEARTBEAT;ALIVE;
+2025-12-30 00:32:44 - Unknown drone attempted to communicate: DRONE-157
+2025-12-30 00:32:45 - Received message: DRONE-107;HEARTBEAT;ALIVE;
+2025-12-30 00:32:45 - Unknown drone attempted to communicate: DRONE-107
+2025-12-30 00:32:45 - Received message: DRONE-113;HEARTBEAT;ALIVE;
+2025-12-30 00:32:45 - Unknown drone attempted to communicate: DRONE-113
+2025-12-30 00:32:45 - Received message: DRONE-116;HEARTBEAT;ALIVE;
+2025-12-30 00:32:45 - Unknown drone attempted to communicate: DRONE-116
+2025-12-30 00:32:45 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:32:45 - Unknown drone attempted to communicate: DRONE-101
+2025-12-30 00:32:45 - Received message: DRONE-122;HEARTBEAT;ALIVE;
+2025-12-30 00:32:45 - Unknown drone attempted to communicate: DRONE-122
+2025-12-30 00:32:45 - Received message: DRONE-110;HEARTBEAT;ALIVE;
+2025-12-30 00:32:45 - Unknown drone attempted to communicate: DRONE-110
+2025-12-30 00:32:45 - Received message: DRONE-119;HEARTBEAT;ALIVE;
+2025-12-30 00:32:45 - Unknown drone attempted to communicate: DRONE-119
+2025-12-30 00:32:45 - Received message: DRONE-128;HEARTBEAT;ALIVE;
+2025-12-30 00:32:45 - Unknown drone attempted to communicate: DRONE-128
+2025-12-30 00:32:45 - Received message: DRONE-125;HEARTBEAT;ALIVE;
+2025-12-30 00:32:45 - Unknown drone attempted to communicate: DRONE-125
+2025-12-30 00:32:45 - Received message: DRONE-131;HEARTBEAT;ALIVE;
+2025-12-30 00:32:45 - Unknown drone attempted to communicate: DRONE-131
+2025-12-30 00:32:45 - Received message: DRONE-134;HEARTBEAT;ALIVE;
+2025-12-30 00:32:45 - Unknown drone attempted to communicate: DRONE-134
+2025-12-30 00:32:45 - Received message: DRONE-140;HEARTBEAT;ALIVE;
+2025-12-30 00:32:45 - Unknown drone attempted to communicate: DRONE-140
+2025-12-30 00:32:45 - Received message: DRONE-137;HEARTBEAT;ALIVE;
+2025-12-30 00:32:45 - Unknown drone attempted to communicate: DRONE-137
+2025-12-30 00:32:45 - Received message: DRONE-143;HEARTBEAT;ALIVE;
+2025-12-30 00:32:45 - Unknown drone attempted to communicate: DRONE-143
+2025-12-30 00:32:45 - Received message: DRONE-149;HEARTBEAT;ALIVE;
+2025-12-30 00:32:45 - Unknown drone attempted to communicate: DRONE-149
+2025-12-30 00:32:45 - Received message: DRONE-146;HEARTBEAT;ALIVE;
+2025-12-30 00:32:45 - Unknown drone attempted to communicate: DRONE-146
+2025-12-30 00:32:45 - Received message: DRONE-152;HEARTBEAT;ALIVE;
+2025-12-30 00:32:45 - Unknown drone attempted to communicate: DRONE-152
+2025-12-30 00:32:45 - Received message: DRONE-155;HEARTBEAT;ALIVE;
+2025-12-30 00:32:45 - Unknown drone attempted to communicate: DRONE-155
+2025-12-30 00:32:45 - Received message: DRONE-158;HEARTBEAT;ALIVE;
+2025-12-30 00:32:48 - TaskManager: 6 Tasks initialized with 2 points each.
+2025-12-30 00:32:48 - Mission Leader initialized on port 9876
+2025-12-30 00:32:48 - Mission Leader Receiver Loop Started...
+2025-12-30 00:32:51 - Received message: DRONE-101;REGISTER;
+2025-12-30 00:32:51 - New Registration: DRONE-101
+2025-12-30 00:32:52 - Registration sent for Drone DRONE-101
+2025-12-30 00:32:52 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:32:52 - Successfully Launched: DRONE-101
+2025-12-30 00:32:52 - Received message: DRONE-101;REQUEST_TASK;
+2025-12-30 00:32:52 - Sent task TASK_1 with 2 points to DRONE-101
+2025-12-30 00:32:52 - Drone [DRONE-101] Target Area: [0.0,0.0] , [2.0,0.0] , [0.0,4.0] , [2.0,4.0]
+2025-12-30 00:32:52 - Drone DRONE-101 is scanning... (Estimated time: 9s)
+2025-12-30 00:32:55 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:32:58 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:33:01 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:33:01 - Drone DRONE-101 COMPLETED scanning and found 23 survivors.
+2025-12-30 00:33:01 - Received message: DRONE-101;SUBMIT_RESULT;TASK_1;23;
+2025-12-30 00:33:01 - TaskManager: TASK_1 is COMPLETED.
+2025-12-30 00:33:01 - Drone DRONE-101 sent survivors count (23) for task TASK_1
+2025-12-30 00:33:01 - Drone DRONE-101 COMPLETED TASK_1 with 23 survivors.
+2025-12-30 00:33:02 - Registration sent for Drone DRONE-102
+2025-12-30 00:33:02 - Received message: DRONE-102;REGISTER;
+2025-12-30 00:33:02 - New Registration: DRONE-102
+2025-12-30 00:33:02 - Successfully Launched: DRONE-102
+2025-12-30 00:33:02 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:33:02 - Received message: DRONE-102;REQUEST_TASK;
+2025-12-30 00:33:02 - Sent task TASK_2 with 2 points to DRONE-102
+2025-12-30 00:33:02 - Drone [DRONE-102] Target Area: [2.0,0.0] , [4.0,0.0] , [2.0,4.0] , [4.0,4.0]
+2025-12-30 00:33:02 - Drone DRONE-102 is scanning... (Estimated time: 8s)
+2025-12-30 00:33:04 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:33:05 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:33:07 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:33:08 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:33:10 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:33:10 - Drone DRONE-102 COMPLETED scanning and found 25 survivors.
+2025-12-30 00:33:10 - Drone DRONE-102 sent survivors count (25) for task TASK_2
+2025-12-30 00:33:10 - Received message: DRONE-102;SUBMIT_RESULT;TASK_2;25;
+2025-12-30 00:33:10 - TaskManager: TASK_2 is COMPLETED.
+2025-12-30 00:33:10 - Drone DRONE-102 COMPLETED TASK_2 with 25 survivors.
+2025-12-30 00:33:11 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:33:12 - Registration sent for Drone DRONE-103
+2025-12-30 00:33:12 - Received message: DRONE-103;REGISTER;
+2025-12-30 00:33:12 - New Registration: DRONE-103
+2025-12-30 00:33:12 - Successfully Launched: DRONE-103
+2025-12-30 00:33:12 - Received message: DRONE-103;HEARTBEAT;ALIVE;
+2025-12-30 00:33:12 - Received message: DRONE-103;REQUEST_TASK;
+2025-12-30 00:33:12 - Sent task TASK_3 with 2 points to DRONE-103
+2025-12-30 00:33:12 - Drone [DRONE-103] Target Area: [4.0,0.0] , [6.0,0.0] , [4.0,4.0] , [6.0,4.0]
+2025-12-30 00:33:12 - Drone DRONE-103 is scanning... (Estimated time: 6s)
+2025-12-30 00:33:13 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:33:14 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:33:15 - Received message: DRONE-103;HEARTBEAT;ALIVE;
+2025-12-30 00:33:16 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:33:17 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:33:18 - Received message: DRONE-103;HEARTBEAT;ALIVE;
+2025-12-30 00:33:18 - Drone DRONE-103 COMPLETED scanning and found 12 survivors.
+2025-12-30 00:33:18 - Drone DRONE-103 sent survivors count (12) for task TASK_3
+2025-12-30 00:33:18 - Received message: DRONE-103;SUBMIT_RESULT;TASK_3;12;
+2025-12-30 00:33:18 - TaskManager: TASK_3 is COMPLETED.
+2025-12-30 00:33:18 - Drone DRONE-103 COMPLETED TASK_3 with 12 survivors.
+2025-12-30 00:33:19 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:33:20 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:33:21 - Received message: DRONE-103;HEARTBEAT;ALIVE;
+2025-12-30 00:33:22 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:33:22 - Received message: DRONE-104;REGISTER;
+2025-12-30 00:33:22 - Registration sent for Drone DRONE-104
+2025-12-30 00:33:22 - New Registration: DRONE-104
+2025-12-30 00:33:22 - Successfully Launched: DRONE-104
+2025-12-30 00:33:22 - Received message: DRONE-104;REQUEST_TASK;
+2025-12-30 00:33:22 - Sent task TASK_4 with 2 points to DRONE-104
+2025-12-30 00:33:22 - Drone [DRONE-104] Target Area: [0.0,4.0] , [2.0,4.0] , [0.0,8.0] , [2.0,8.0]
+2025-12-30 00:33:22 - Drone DRONE-104 is scanning... (Estimated time: 7s)
+2025-12-30 00:33:23 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:33:24 - Received message: DRONE-103;HEARTBEAT;ALIVE;
+2025-12-30 00:33:25 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:33:26 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:33:27 - Received message: DRONE-103;HEARTBEAT;ALIVE;
+2025-12-30 00:33:28 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:33:28 - Drone DRONE-104 timed out (LOST) !
+2025-12-30 00:33:28 - TaskManager: TASK_4 is RECOVERED and PENDING.
+2025-12-30 00:33:28 - Server Socket Error: Socket closed
+2025-12-30 00:33:29 - Drone DRONE-104 COMPLETED scanning and found 2 survivors.
+2025-12-30 00:33:29 - Drone DRONE-104 sent survivors count (2) for task TASK_4
+2025-12-30 00:33:32 - Drone DRONE-102 timed out (LOST) !
+2025-12-30 00:33:32 - Registration sent for Drone DRONE-105
+2025-12-30 00:33:32 - Successfully Launched: DRONE-105
+2025-12-30 00:33:34 - Drone DRONE-101 timed out (LOST) !
+2025-12-30 00:33:34 - Drone DRONE-103 timed out (LOST) !
+2025-12-30 00:33:42 - Registration sent for Drone DRONE-106
+2025-12-30 00:33:42 - Successfully Launched: DRONE-106
+2025-12-30 00:33:52 - Registration sent for Drone DRONE-107
+2025-12-30 00:33:52 - Successfully Launched: DRONE-107
+2025-12-30 00:34:02 - Registration sent for Drone DRONE-108
+2025-12-30 00:34:02 - Successfully Launched: DRONE-108
+2025-12-30 00:34:12 - Registration sent for Drone DRONE-109
+2025-12-30 00:34:12 - Successfully Launched: DRONE-109
+2025-12-30 00:34:22 - Registration sent for Drone DRONE-110
+2025-12-30 00:34:22 - Successfully Launched: DRONE-110
+2025-12-30 00:34:32 - Registration sent for Drone DRONE-111
+2025-12-30 00:34:32 - Successfully Launched: DRONE-111
+2025-12-30 00:34:42 - Registration sent for Drone DRONE-112
+2025-12-30 00:34:42 - Successfully Launched: DRONE-112
+2025-12-30 00:34:52 - Registration sent for Drone DRONE-113
+2025-12-30 00:34:52 - Successfully Launched: DRONE-113
+2025-12-30 00:35:02 - Registration sent for Drone DRONE-114
+2025-12-30 00:35:02 - Successfully Launched: DRONE-114
+2025-12-30 00:35:12 - Registration sent for Drone DRONE-115
+2025-12-30 00:35:12 - Successfully Launched: DRONE-115
+2025-12-30 00:35:22 - Registration sent for Drone DRONE-116
+2025-12-30 00:35:22 - Successfully Launched: DRONE-116
+2025-12-30 00:35:32 - Registration sent for Drone DRONE-117
+2025-12-30 00:35:32 - Successfully Launched: DRONE-117
+2025-12-30 00:35:42 - Registration sent for Drone DRONE-118
+2025-12-30 00:35:42 - Successfully Launched: DRONE-118
+2025-12-30 00:35:52 - Registration sent for Drone DRONE-119
+2025-12-30 00:35:52 - Successfully Launched: DRONE-119
+2025-12-30 00:36:02 - Registration sent for Drone DRONE-120
+2025-12-30 00:36:02 - Successfully Launched: DRONE-120
+2025-12-30 00:36:12 - Registration sent for Drone DRONE-121
+2025-12-30 00:36:12 - Successfully Launched: DRONE-121
+2025-12-30 00:36:22 - Registration sent for Drone DRONE-122
+2025-12-30 00:36:22 - Successfully Launched: DRONE-122
+2025-12-30 00:36:32 - Registration sent for Drone DRONE-123
+2025-12-30 00:36:32 - Successfully Launched: DRONE-123
+2025-12-30 00:36:42 - Registration sent for Drone DRONE-124
+2025-12-30 00:36:42 - Successfully Launched: DRONE-124
+2025-12-30 00:36:52 - Registration sent for Drone DRONE-125
+2025-12-30 00:36:52 - Successfully Launched: DRONE-125
+2025-12-30 00:37:02 - Registration sent for Drone DRONE-126
+2025-12-30 00:37:02 - Successfully Launched: DRONE-126
+2025-12-30 00:37:12 - Registration sent for Drone DRONE-127
+2025-12-30 00:37:12 - Successfully Launched: DRONE-127
+2025-12-30 00:37:22 - Registration sent for Drone DRONE-128
+2025-12-30 00:37:22 - Successfully Launched: DRONE-128
+2025-12-30 00:37:32 - Registration sent for Drone DRONE-129
+2025-12-30 00:37:32 - Successfully Launched: DRONE-129
+2025-12-30 00:37:42 - Registration sent for Drone DRONE-130
+2025-12-30 00:37:42 - Successfully Launched: DRONE-130
+2025-12-30 00:37:52 - Registration sent for Drone DRONE-131
+2025-12-30 00:37:52 - Successfully Launched: DRONE-131
+2025-12-30 00:38:02 - Registration sent for Drone DRONE-132
+2025-12-30 00:38:02 - Successfully Launched: DRONE-132
+2025-12-30 00:38:12 - Registration sent for Drone DRONE-133
+2025-12-30 00:38:12 - Successfully Launched: DRONE-133
+2025-12-30 00:38:22 - Registration sent for Drone DRONE-134
+2025-12-30 00:38:22 - Successfully Launched: DRONE-134
+2025-12-30 00:38:32 - Registration sent for Drone DRONE-135
+2025-12-30 00:38:32 - Successfully Launched: DRONE-135
+2025-12-30 00:38:42 - Registration sent for Drone DRONE-136
+2025-12-30 00:38:42 - Successfully Launched: DRONE-136
+2025-12-30 00:38:56 - TaskManager: 6 Tasks initialized with 2 points each.
+2025-12-30 00:38:56 - Mission Leader initialized on port 9876
+2025-12-30 00:38:56 - Mission Leader Receiver Loop Started...
+2025-12-30 00:39:03 - Received message: DRONE-101;REGISTER;
+2025-12-30 00:39:03 - New Registration: DRONE-101
+2025-12-30 00:39:04 - Registration sent for Drone DRONE-101
+2025-12-30 00:39:04 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:39:04 - Successfully Launched: DRONE-101
+2025-12-30 00:39:04 - Received message: DRONE-101;REQUEST_TASK;
+2025-12-30 00:39:04 - Sent task TASK_1 with 2 points to DRONE-101
+2025-12-30 00:39:04 - Drone [DRONE-101] Target Area: [0.0,0.0] , [2.0,0.0] , [0.0,4.0] , [2.0,4.0]
+2025-12-30 00:39:04 - Drone DRONE-101 is scanning... (Estimated time: 10s)
+2025-12-30 00:39:07 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:39:10 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:39:13 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:39:14 - Registration sent for Drone DRONE-102
+2025-12-30 00:39:14 - Received message: DRONE-102;REGISTER;
+2025-12-30 00:39:14 - New Registration: DRONE-102
+2025-12-30 00:39:14 - Successfully Launched: DRONE-102
+2025-12-30 00:39:14 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:39:14 - Received message: DRONE-102;REQUEST_TASK;
+2025-12-30 00:39:14 - Sent task TASK_2 with 2 points to DRONE-102
+2025-12-30 00:39:14 - Drone [DRONE-102] Target Area: [2.0,0.0] , [4.0,0.0] , [2.0,4.0] , [4.0,4.0]
+2025-12-30 00:39:14 - Drone DRONE-102 is scanning... (Estimated time: 7s)
+2025-12-30 00:39:14 - Drone DRONE-101 COMPLETED scanning and found 9 survivors.
+2025-12-30 00:39:14 - Received message: DRONE-101;SUBMIT_RESULT;TASK_1;9;
+2025-12-30 00:39:14 - Drone DRONE-101 sent survivors count (9) for task TASK_1
+2025-12-30 00:39:14 - TaskManager: TASK_1 is COMPLETED.
+2025-12-30 00:39:14 - Drone DRONE-101 COMPLETED TASK_1 with 9 survivors.
+2025-12-30 00:39:16 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:39:17 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:39:19 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:39:20 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:39:21 - Drone DRONE-102 COMPLETED scanning and found 12 survivors.
+2025-12-30 00:39:21 - Drone DRONE-102 sent survivors count (12) for task TASK_2
+2025-12-30 00:39:21 - Received message: DRONE-102;SUBMIT_RESULT;TASK_2;12;
+2025-12-30 00:39:21 - TaskManager: TASK_2 is COMPLETED.
+2025-12-30 00:39:21 - Drone DRONE-102 COMPLETED TASK_2 with 12 survivors.
+2025-12-30 00:39:22 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:39:23 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:39:24 - Registration sent for Drone DRONE-103
+2025-12-30 00:39:24 - Received message: DRONE-103;REGISTER;
+2025-12-30 00:39:24 - New Registration: DRONE-103
+2025-12-30 00:39:24 - Successfully Launched: DRONE-103
+2025-12-30 00:39:24 - Received message: DRONE-103;HEARTBEAT;ALIVE;
+2025-12-30 00:39:24 - Received message: DRONE-103;REQUEST_TASK;
+2025-12-30 00:39:24 - Sent task TASK_3 with 2 points to DRONE-103
+2025-12-30 00:39:24 - Drone [DRONE-103] Target Area: [4.0,0.0] , [6.0,0.0] , [4.0,4.0] , [6.0,4.0]
+2025-12-30 00:39:24 - Drone DRONE-103 is scanning... (Estimated time: 7s)
+2025-12-30 00:39:25 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:39:26 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:39:27 - Received message: DRONE-103;HEARTBEAT;ALIVE;
+2025-12-30 00:39:28 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:39:29 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:39:30 - Received message: DRONE-103;HEARTBEAT;ALIVE;
+2025-12-30 00:39:31 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:39:31 - Drone DRONE-103 COMPLETED scanning and found 44 survivors.
+2025-12-30 00:39:31 - Drone DRONE-103 sent survivors count (44) for task TASK_3
+2025-12-30 00:39:31 - Received message: DRONE-103;SUBMIT_RESULT;TASK_3;44;
+2025-12-30 00:39:31 - TaskManager: TASK_3 is COMPLETED.
+2025-12-30 00:39:31 - Drone DRONE-103 COMPLETED TASK_3 with 44 survivors.
+2025-12-30 00:39:32 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:39:33 - Received message: DRONE-103;HEARTBEAT;ALIVE;
+2025-12-30 00:39:34 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:39:34 - Registration sent for Drone DRONE-104
+2025-12-30 00:39:34 - Received message: DRONE-104;REGISTER;
+2025-12-30 00:39:34 - New Registration: DRONE-104
+2025-12-30 00:39:34 - Successfully Launched: DRONE-104
+2025-12-30 00:39:34 - Received message: DRONE-104;REQUEST_TASK;
+2025-12-30 00:39:34 - Sent task TASK_4 with 2 points to DRONE-104
+2025-12-30 00:39:34 - Drone [DRONE-104] Target Area: [0.0,4.0] , [2.0,4.0] , [0.0,8.0] , [2.0,8.0]
+2025-12-30 00:39:34 - Drone DRONE-104 is scanning... (Estimated time: 6s)
+2025-12-30 00:39:35 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:39:36 - Received message: DRONE-103;HEARTBEAT;ALIVE;
+2025-12-30 00:39:37 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:39:38 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:39:39 - Received message: DRONE-103;HEARTBEAT;ALIVE;
+2025-12-30 00:39:40 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:39:40 - Drone DRONE-104 timed out (LOST) !
+2025-12-30 00:39:40 - TaskManager: TASK_4 is RECOVERED and PENDING.
+2025-12-30 00:39:40 - Drone DRONE-104 COMPLETED scanning and found 10 survivors.
+2025-12-30 00:39:40 - Drone DRONE-104 sent survivors count (10) for task TASK_4
+2025-12-30 00:39:40 - Received message: DRONE-104;SUBMIT_RESULT;TASK_4;10;
+2025-12-30 00:39:40 - Unknown drone attempted to communicate: DRONE-104
+2025-12-30 00:39:41 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:39:42 - Received message: DRONE-103;HEARTBEAT;ALIVE;
+2025-12-30 00:39:43 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:39:44 - Registration sent for Drone DRONE-105
+2025-12-30 00:39:44 - Received message: DRONE-105;REGISTER;
+2025-12-30 00:39:44 - New Registration: DRONE-105
+2025-12-30 00:39:44 - Successfully Launched: DRONE-105
+2025-12-30 00:39:44 - Received message: DRONE-102;HEARTBEAT;ALIVE;
+2025-12-30 00:39:44 - Received message: DRONE-105;HEARTBEAT;ALIVE;
+2025-12-30 00:39:44 - Received message: DRONE-105;REQUEST_TASK;
+2025-12-30 00:39:44 - Drone [DRONE-105] Target Area: [0.0,4.0] , [2.0,4.0] , [0.0,8.0] , [2.0,8.0]
+2025-12-30 00:39:44 - Sent task TASK_4 with 2 points to DRONE-105
+2025-12-30 00:39:44 - Drone DRONE-105 is scanning... (Estimated time: 8s)
+2025-12-30 00:39:45 - Received message: DRONE-103;HEARTBEAT;ALIVE;
+2025-12-30 00:39:46 - Received message: DRONE-101;HEARTBEAT;ALIVE;
+2025-12-30 00:39:52 - Drone DRONE-105 COMPLETED scanning and found 23 survivors.
+2025-12-30 00:39:52 - Drone DRONE-105 sent survivors count (23) for task TASK_4
+2025-12-30 00:39:54 - Registration sent for Drone DRONE-106
+2025-12-30 00:39:54 - Successfully Launched: DRONE-106
+2025-12-30 00:40:04 - Registration sent for Drone DRONE-107
+2025-12-30 00:40:04 - Successfully Launched: DRONE-107
+2025-12-30 00:40:14 - Registration sent for Drone DRONE-108
+2025-12-30 00:40:14 - Successfully Launched: DRONE-108
+2025-12-30 00:40:24 - Registration sent for Drone DRONE-109
+2025-12-30 00:40:24 - Successfully Launched: DRONE-109
+2025-12-30 00:40:34 - Registration sent for Drone DRONE-110
+2025-12-30 00:40:34 - Successfully Launched: DRONE-110
+2025-12-30 00:40:44 - Registration sent for Drone DRONE-111
+2025-12-30 00:40:44 - Successfully Launched: DRONE-111
+2025-12-30 00:40:54 - Registration sent for Drone DRONE-112
+2025-12-30 00:40:54 - Successfully Launched: DRONE-112
+2025-12-30 00:41:04 - Registration sent for Drone DRONE-113
+2025-12-30 00:41:04 - Successfully Launched: DRONE-113
+2025-12-30 00:41:14 - Registration sent for Drone DRONE-114
+2025-12-30 00:41:14 - Successfully Launched: DRONE-114
+2025-12-30 00:41:24 - Registration sent for Drone DRONE-115
+2025-12-30 00:41:24 - Successfully Launched: DRONE-115
+2025-12-30 00:41:34 - Registration sent for Drone DRONE-116
+2025-12-30 00:41:34 - Successfully Launched: DRONE-116
+2025-12-30 00:41:44 - Registration sent for Drone DRONE-117
+2025-12-30 00:41:44 - Successfully Launched: DRONE-117
+2025-12-30 00:41:54 - Registration sent for Drone DRONE-118
+2025-12-30 00:41:54 - Successfully Launched: DRONE-118
+2025-12-30 00:42:04 - Registration sent for Drone DRONE-119
+2025-12-30 00:42:04 - Successfully Launched: DRONE-119
+2025-12-30 00:42:14 - Registration sent for Drone DRONE-120
+2025-12-30 00:42:14 - Successfully Launched: DRONE-120
+2025-12-30 00:42:24 - Registration sent for Drone DRONE-121
+2025-12-30 00:42:24 - Successfully Launched: DRONE-121
+2025-12-30 00:42:34 - Registration sent for Drone DRONE-122
+2025-12-30 00:42:34 - Successfully Launched: DRONE-122
+2025-12-30 00:42:44 - Registration sent for Drone DRONE-123
+2025-12-30 00:42:44 - Successfully Launched: DRONE-123
+2025-12-30 00:42:54 - Registration sent for Drone DRONE-124
+2025-12-30 00:42:54 - Successfully Launched: DRONE-124
+2025-12-30 00:43:04 - Registration sent for Drone DRONE-125
+2025-12-30 00:43:04 - Successfully Launched: DRONE-125
+2025-12-30 00:43:14 - Registration sent for Drone DRONE-126
+2025-12-30 00:43:14 - Successfully Launched: DRONE-126
+2025-12-30 00:43:24 - Registration sent for Drone DRONE-127
+2025-12-30 00:43:24 - Successfully Launched: DRONE-127
+2025-12-30 00:43:34 - Registration sent for Drone DRONE-128
+2025-12-30 00:43:34 - Successfully Launched: DRONE-128
+2025-12-30 00:43:44 - Registration sent for Drone DRONE-129
+2025-12-30 00:43:44 - Successfully Launched: DRONE-129
+2025-12-30 00:43:54 - Registration sent for Drone DRONE-130
+2025-12-30 00:43:54 - Successfully Launched: DRONE-130
+2025-12-30 00:44:04 - Registration sent for Drone DRONE-131
+2025-12-30 00:44:04 - Successfully Launched: DRONE-131
+2025-12-30 00:44:14 - Registration sent for Drone DRONE-132
+2025-12-30 00:44:14 - Successfully Launched: DRONE-132
+2025-12-30 00:44:24 - Registration sent for Drone DRONE-133
+2025-12-30 00:44:24 - Successfully Launched: DRONE-133
+2025-12-30 00:44:34 - Registration sent for Drone DRONE-134
+2025-12-30 00:44:34 - Successfully Launched: DRONE-134
+2025-12-30 00:44:44 - Registration sent for Drone DRONE-135
+2025-12-30 00:44:44 - Successfully Launched: DRONE-135
+2025-12-30 00:44:54 - Registration sent for Drone DRONE-136
+2025-12-30 00:44:54 - Successfully Launched: DRONE-136
+2025-12-30 00:45:04 - Registration sent for Drone DRONE-137
+2025-12-30 00:45:04 - Successfully Launched: DRONE-137
+2025-12-30 00:45:14 - Registration sent for Drone DRONE-138
+2025-12-30 00:45:14 - Successfully Launched: DRONE-138
+2025-12-30 00:45:24 - Registration sent for Drone DRONE-139
+2025-12-30 00:45:24 - Successfully Launched: DRONE-139
+2025-12-30 00:45:34 - Registration sent for Drone DRONE-140
+2025-12-30 00:45:34 - Successfully Launched: DRONE-140
+2025-12-30 00:45:44 - Registration sent for Drone DRONE-141
+2025-12-30 00:45:44 - Successfully Launched: DRONE-141
+2025-12-30 00:45:54 - Registration sent for Drone DRONE-142
+2025-12-30 00:45:54 - Successfully Launched: DRONE-142
+2025-12-30 00:46:04 - Registration sent for Drone DRONE-143
+2025-12-30 00:46:04 - Successfully Launched: DRONE-143
+2025-12-30 00:46:14 - Registration sent for Drone DRONE-144
+2025-12-30 00:46:14 - Successfully Launched: DRONE-144
+2025-12-30 00:46:24 - Registration sent for Drone DRONE-145
+2025-12-30 00:46:24 - Successfully Launched: DRONE-145
+2025-12-30 00:46:34 - Registration sent for Drone DRONE-146
+2025-12-30 00:46:34 - Successfully Launched: DRONE-146
+2025-12-30 00:46:44 - Registration sent for Drone DRONE-147
+2025-12-30 00:46:44 - Successfully Launched: DRONE-147
+2025-12-30 00:46:54 - Registration sent for Drone DRONE-148
+2025-12-30 00:46:54 - Successfully Launched: DRONE-148
+2025-12-30 00:47:04 - Registration sent for Drone DRONE-149
+2025-12-30 00:47:04 - Successfully Launched: DRONE-149
+2025-12-30 00:47:14 - Registration sent for Drone DRONE-150
+2025-12-30 00:47:14 - Successfully Launched: DRONE-150
+2025-12-30 00:47:24 - Registration sent for Drone DRONE-151
+2025-12-30 00:47:24 - Successfully Launched: DRONE-151
+2025-12-30 00:47:34 - Registration sent for Drone DRONE-152
+2025-12-30 00:47:34 - Successfully Launched: DRONE-152
+2025-12-30 00:47:44 - Registration sent for Drone DRONE-153
+2025-12-30 00:47:44 - Successfully Launched: DRONE-153
+2025-12-30 00:47:54 - Registration sent for Drone DRONE-154
+2025-12-30 00:47:54 - Successfully Launched: DRONE-154
+2025-12-30 00:48:04 - Registration sent for Drone DRONE-155
+2025-12-30 00:48:04 - Successfully Launched: DRONE-155
+2025-12-30 00:48:14 - Registration sent for Drone DRONE-156
+2025-12-30 00:48:14 - Successfully Launched: DRONE-156
+2025-12-30 00:48:24 - Registration sent for Drone DRONE-157
+2025-12-30 00:48:24 - Successfully Launched: DRONE-157
+2025-12-30 00:48:34 - Registration sent for Drone DRONE-158
+2025-12-30 00:48:34 - Successfully Launched: DRONE-158
+2025-12-30 00:48:44 - Registration sent for Drone DRONE-159
+2025-12-30 00:48:44 - Successfully Launched: DRONE-159
+2025-12-30 00:48:54 - Registration sent for Drone DRONE-160
+2025-12-30 00:48:54 - Successfully Launched: DRONE-160
+2025-12-30 00:49:04 - Registration sent for Drone DRONE-161
+2025-12-30 00:49:04 - Successfully Launched: DRONE-161
+2025-12-30 00:49:14 - Registration sent for Drone DRONE-162
+2025-12-30 00:49:14 - Successfully Launched: DRONE-162
+2025-12-30 00:49:24 - Registration sent for Drone DRONE-163
+2025-12-30 00:49:24 - Successfully Launched: DRONE-163
+2025-12-30 00:49:34 - Registration sent for Drone DRONE-164
+2025-12-30 00:49:34 - Successfully Launched: DRONE-164
+2025-12-30 00:49:44 - Registration sent for Drone DRONE-165
+2025-12-30 00:49:44 - Successfully Launched: DRONE-165
+2025-12-30 00:49:54 - Registration sent for Drone DRONE-166
+2025-12-30 00:49:54 - Successfully Launched: DRONE-166
+2025-12-30 00:50:04 - Registration sent for Drone DRONE-167
+2025-12-30 00:50:04 - Successfully Launched: DRONE-167
+2025-12-30 00:50:14 - Registration sent for Drone DRONE-168
+2025-12-30 00:50:14 - Successfully Launched: DRONE-168
+2025-12-30 00:50:24 - Registration sent for Drone DRONE-169
+2025-12-30 00:50:24 - Successfully Launched: DRONE-169
+2025-12-30 00:50:34 - Registration sent for Drone DRONE-170
+2025-12-30 00:50:34 - Successfully Launched: DRONE-170
+2025-12-30 00:50:44 - Registration sent for Drone DRONE-171
+2025-12-30 00:50:44 - Successfully Launched: DRONE-171
+2025-12-30 00:50:54 - Registration sent for Drone DRONE-172
+2025-12-30 00:50:54 - Successfully Launched: DRONE-172
+2025-12-30 00:51:04 - Registration sent for Drone DRONE-173
+2025-12-30 00:51:04 - Successfully Launched: DRONE-173
