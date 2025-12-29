@@ -1,11 +1,8 @@
 package com.example.Server;
 
-//import java.util.AbstractMap.SimpleEntry;
 import java.util.concurrent.ConcurrentHashMap;
 import java.io.*;
 import java.net.*;
-//import java.util.*;
-//import com.example.Model.*;
 import com.example.Utils.States;
 
 public class MissionLeader extends Thread {
@@ -32,13 +29,13 @@ public class MissionLeader extends Thread {
 
                 skt.receive(pktIn);
 
-                String message = new String(pktIn.getData(), pktIn.getOffset(), pktIn.getLength());
+                String message = new String(pktIn.getData(), pktIn.getOffset(), pktIn.getLength()).trim();
                 String[] parts = message.split(";");
                 if (parts.length < 2)
                     continue;
 
-                String command = parts[1].toUpperCase();
-                String droneID = parts[0];
+                String command = parts[1].trim();
+                String droneID = parts[0].trim();
 
                 handleRouting(command, droneID, parts, pktIn);
             }

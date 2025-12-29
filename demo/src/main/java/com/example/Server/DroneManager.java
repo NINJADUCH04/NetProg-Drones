@@ -2,16 +2,11 @@ package com.example.Server;
 
 import java.io.IOException;
 import java.net.*;
-//import java.util.HashMap;
-//import java.util.AbstractMap.SimpleEntry;
-//import java.util.concurrent.ConcurrentHashMap;
-//import java.util.concurrent.ConcurrentMap;
 import com.example.Utils.States;
 import com.example.Model.Coordinate;
 import com.example.Model.Task;
 
 public class DroneManager extends Thread {
-    // Task [] globalTasks;
     private TaskManager taskManager;
     private String droneID;
     private SocketAddress clientAddress;
@@ -30,7 +25,17 @@ public class DroneManager extends Thread {
     public void addMessageToQueue(String[] messageParts) {
         try {
             this.lastSeenTime = System.currentTimeMillis();
-            States Command = States.valueOf(messageParts[1].toUpperCase());
+            
+            if (messageParts.length < 2) return;
+
+            String commandStr = messageParts[1].trim().toUpperCase();
+            States Command;
+
+            try{
+                Command = States.valueOf(commandStr);
+            }catch(Exception e){
+                return;
+            }
 
             switch (Command) {
                 case REQUEST_TASK:
@@ -38,12 +43,14 @@ public class DroneManager extends Thread {
                     break;
 
                 case SUBMIT_RESULT:
+                    if (messageParts.length >= 4) {
                     String taskID = messageParts[2];
                     String result = messageParts[3];
                     taskManager.submitTaskResult(droneID, result);
-                    System.out.println("Drone " + droneID + " submitted result for " + taskID);
-                    break;
-
+                    System.out.println("Drone " + droneID + " COMPLETED " + taskID + " with " + result + " survivors.");
+                }
+                break;
+                
                 case HEARTBEAT:
                     break;
 

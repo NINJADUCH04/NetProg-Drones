@@ -38,24 +38,27 @@ public class TaskManager {
 
     public synchronized void submitTaskResult(String droneID, String result) {
         for (Task task : globalTasks) {
-            if (task.getAssignedDroneID().equals(droneID) &&
-                    task.getStatus().equals(States.IN_PROGRESS.name())) {
-                task.assignResult(result);
-                System.out.println("TaskManager: Result saved for " + task.getTaskID());
-                break;
-            }
+            if (droneID.equals(task.getAssignedDroneID()) && 
+            task.getStatus().equals(States.IN_PROGRESS.name())) {
+            
+            task.assignResult(result);
+            task.setStatus(States.COMPLETED.name());
+            System.out.println("TaskManager: " + task.getTaskID() + " is COMPLETED.");
+            break;
+        }
         }
     }
 
     public synchronized void releaseTaskIfLost(String droneID) {
         for (Task task : globalTasks) {
-            if (task.getAssignedDroneID().equals(droneID) &&
-                    !task.getStatus().equals(States.COMPLETED.name())) {
-                task.setStatus(States.PENDING.name());
-                task.setAssignedDroneID("NONE");
-                System.out.println("TaskMananger: " + task.getTaskID() + " released back to PENDING.");
-                break;
-            }
+            if (droneID.equals(task.getAssignedDroneID()) && 
+            !task.getStatus().equals(States.COMPLETED.name())) {
+            
+            task.setStatus(States.PENDING.name()); 
+            task.setAssignedDroneID("NONE");
+            System.out.println("TaskManager: " + task.getTaskID() + " is RECOVERED and PENDING.");
+            break; 
+        }
         }
     }
 }
