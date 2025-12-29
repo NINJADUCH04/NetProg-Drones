@@ -39,7 +39,7 @@ public class Client extends Thread {
     @Override
     public void run() {
         try {
-            while (droneData.getState().equals("ALIVE")) {
+            while (droneData.getState().equals("ALIVE") && !droneData.getDroneID().equals("DRONE-104")) {
                 String heartbeatMessage = droneData.getDroneID() + ";HEARTBEAT;" + droneData.getState() + ";";
                 byte[] hbBuffer = heartbeatMessage.getBytes();
 
