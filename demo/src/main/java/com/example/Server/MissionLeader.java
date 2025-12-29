@@ -59,12 +59,14 @@ public class MissionLeader extends Thread {
                 manager.start();
             } // part of error control
         }
-
-        DroneManager manager = droneThreads.get(droneID);
-        if (manager != null) {
-            manager.addMessageToQueue(parts);
-        } else {
-            System.out.println("Unknown drone attempted to communicate: " + droneID);
+        
+        else {
+            DroneManager manager = droneThreads.get(droneID);
+            if (manager != null) {
+                manager.addMessageToQueue(parts);
+            } else {
+                System.out.println("Unknown drone attempted to communicate: " + droneID);
+            }
         }
     }
     public static void main(String[] args) {
