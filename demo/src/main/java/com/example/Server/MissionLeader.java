@@ -33,6 +33,9 @@ public class MissionLeader extends Thread {
                 skt.receive(pktIn);
 
                 String message = new String(pktIn.getData(), pktIn.getOffset(), pktIn.getLength()).trim();
+                System.out.println("Received message: " + message);
+                DroneLogger.logEvent("Received message: " + message);
+
                 String[] parts = message.split(";");
                 if (parts.length < 2)
                     continue;

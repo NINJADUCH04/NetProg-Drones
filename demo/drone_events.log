@@ -83,3 +83,74 @@
 2025-12-29 23:27:38 - Drone DRONE-102 timed out (LOST) !
 2025-12-29 23:27:38 - Drone DRONE-103 timed out (LOST) !
 2025-12-29 23:27:38 - TaskManager: TASK_3 is RECOVERED and PENDING.
+2025-12-29 23:39:47 - TaskManager: 6 Tasks initialized with 2 points each.
+2025-12-29 23:39:47 - Mission Leader initialized on port 9876
+2025-12-29 23:39:47 - Mission Leader Receiver Loop Started...
+2025-12-29 23:40:36 - New Registration: DRONE-101
+2025-12-29 23:40:36 - Registration sent for Drone DRONE-101
+2025-12-29 23:40:36 - Successfully Launched: DRONE-101
+2025-12-29 23:40:36 - Sent task TASK_1 with 2 points to DRONE-101
+2025-12-29 23:40:36 - Drone [DRONE-101] Target Area: [0.0,0.0] , [2.0,0.0] , [0.0,4.0] , [2.0,4.0]
+2025-12-29 23:40:36 - Drone DRONE-101 is scanning... (Estimated time: 7s)
+2025-12-29 23:40:43 - Drone DRONE-101 COMPLETED scanning and found 34 survivors.
+2025-12-29 23:40:43 - TaskManager: TASK_1 is COMPLETED.
+2025-12-29 23:40:43 - Drone DRONE-101 sent survivors count (34) for task TASK_1
+2025-12-29 23:40:43 - Drone DRONE-101 COMPLETED TASK_1 with 34 survivors.
+2025-12-29 23:40:46 - Registration sent for Drone DRONE-102
+2025-12-29 23:40:46 - Successfully Launched: DRONE-102
+2025-12-29 23:40:56 - Registration sent for Drone DRONE-103
+2025-12-29 23:40:56 - Successfully Launched: DRONE-103
+2025-12-29 23:41:06 - Registration sent for Drone DRONE-104
+2025-12-29 23:41:06 - Successfully Launched: DRONE-104
+2025-12-29 23:41:16 - Registration sent for Drone DRONE-105
+2025-12-29 23:41:16 - Successfully Launched: DRONE-105
+2025-12-29 23:41:26 - Registration sent for Drone DRONE-106
+2025-12-29 23:41:26 - Successfully Launched: DRONE-106
+2025-12-29 23:41:36 - Registration sent for Drone DRONE-107
+2025-12-29 23:41:36 - Successfully Launched: DRONE-107
+2025-12-29 23:41:46 - Registration sent for Drone DRONE-108
+2025-12-29 23:41:46 - Successfully Launched: DRONE-108
+2025-12-29 23:41:56 - Registration sent for Drone DRONE-109
+2025-12-29 23:41:56 - Successfully Launched: DRONE-109
+2025-12-29 23:42:06 - Registration sent for Drone DRONE-110
+2025-12-29 23:42:06 - Successfully Launched: DRONE-110
+2025-12-29 23:42:16 - Registration sent for Drone DRONE-111
+2025-12-29 23:42:16 - Successfully Launched: DRONE-111
+2025-12-29 23:42:26 - Registration sent for Drone DRONE-112
+2025-12-29 23:42:26 - Successfully Launched: DRONE-112
+2025-12-29 23:42:36 - Registration sent for Drone DRONE-113
+2025-12-29 23:42:36 - Successfully Launched: DRONE-113
+2025-12-29 23:42:46 - Registration sent for Drone DRONE-114
+2025-12-29 23:42:46 - Successfully Launched: DRONE-114
+2025-12-29 23:42:56 - Registration sent for Drone DRONE-115
+2025-12-29 23:42:56 - Successfully Launched: DRONE-115
+2025-12-29 23:43:06 - Registration sent for Drone DRONE-116
+2025-12-29 23:43:06 - Successfully Launched: DRONE-116
+2025-12-29 23:43:16 - Registration sent for Drone DRONE-117
+2025-12-29 23:43:16 - Successfully Launched: DRONE-117
+2025-12-29 23:43:26 - Registration sent for Drone DRONE-118
+2025-12-29 23:43:26 - Successfully Launched: DRONE-118
+2025-12-29 23:43:36 - Registration sent for Drone DRONE-119
+2025-12-29 23:43:36 - Successfully Launched: DRONE-119
+2025-12-29 23:43:46 - Registration sent for Drone DRONE-120
+2025-12-29 23:43:46 - Successfully Launched: DRONE-120
+2025-12-29 23:43:56 - Registration sent for Drone DRONE-121
+2025-12-29 23:43:56 - Successfully Launched: DRONE-121
+2025-12-29 23:44:06 - Registration sent for Drone DRONE-122
+2025-12-29 23:44:06 - Successfully Launched: DRONE-122
+2025-12-29 23:44:16 - Registration sent for Drone DRONE-123
+2025-12-29 23:44:16 - Successfully Launched: DRONE-123
+2025-12-29 23:44:26 - Registration sent for Drone DRONE-124
+2025-12-29 23:44:26 - Successfully Launched: DRONE-124
+2025-12-29 23:44:36 - Registration sent for Drone DRONE-125
+2025-12-29 23:44:36 - Successfully Launched: DRONE-125
+2025-12-29 23:44:46 - Registration sent for Drone DRONE-126
+2025-12-29 23:44:46 - Successfully Launched: DRONE-126
+2025-12-29 23:44:56 - Registration sent for Drone DRONE-127
+2025-12-29 23:44:56 - Successfully Launched: DRONE-127
+2025-12-29 23:45:06 - Registration sent for Drone DRONE-128
+2025-12-29 23:45:06 - Successfully Launched: DRONE-128
+2025-12-29 23:45:16 - Registration sent for Drone DRONE-129
+2025-12-29 23:45:16 - Successfully Launched: DRONE-129
+2025-12-29 23:45:26 - Registration sent for Drone DRONE-130
+2025-12-29 23:45:26 - Successfully Launched: DRONE-130
