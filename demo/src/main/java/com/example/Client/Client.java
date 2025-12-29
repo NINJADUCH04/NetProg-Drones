@@ -1,7 +1,6 @@
 package com.example.Client;
 
 import com.example.Model.Drone;
-import com.example.Model.Task;
 import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
@@ -16,6 +15,7 @@ public class Client extends Thread {
     private InetAddress inetAddress;
     private final int severPort = 9876;
     private Drone droneData;
+    private static volatile boolean availableTasks = true;
 
     public Client(DatagramSocket datagramSocket, InetAddress inetAddress, String droneID) {
         this.datagramSocket = datagramSocket;
@@ -65,16 +65,43 @@ public class Client extends Thread {
             datagramSocket.receive(receivePacket);
 
             String receivedTask = new String(receivePacket.getData(), 0, receivePacket.getLength());
+            if(receivedTask.equals("NO_MORE_TASKS")){
+                System.out.println("Drone " + droneData.getDroneID() + ": Received [NO_MORE_TASKS]. Stopping...");
+                availableTasks = false;
+                return;
+            }
             String[] parts = receivedTask.split(";");
 
             String receivedTaskID = parts[0];
-            String point1 = parts[1];
-            String point2 = parts[2];
-            System.out.println("Drone " + droneData.getDroneID() + " working on area from " + point1 + " to " + point2);
+            String[] point1 = parts[1].split(",");
+            String[] point2 = parts[2].split(",");
+
+            double x1 = Double.parseDouble(point1[0]);
+            double y1 = Double.parseDouble(point1[1]);
+            double x2 = Double.parseDouble(point2[0]);
+            double y2 = Double.parseDouble(point2[1]);
+
+            String corner1 = x1 + "," + y1;
+            String corner2 = x2 + "," + y1; 
+            String corner3 = x1 + "," + y2;
+            String corner4 = x2 + "," + y2; 
+             
+
+            System.out.println("Drone [" + droneData.getDroneID() + "] Target Area: " 
+            + "[" + corner1 + "] , [" + corner2 + "] , [" + corner3 + "] , [" + corner4 + "]");
+
+            System.out.println("Drone " + droneData.getDroneID() + " is currently scanning the area...");
+
+            Random rand = new Random();
+            int workDuration = rand.nextInt(5000) + 4000;
+            System.out.println("Drone " + droneData.getDroneID() + " is scanning... (Estimated time: " + (workDuration/1000) + "s)");
+            Thread.sleep(workDuration);
 
             int survivors = new Random().nextInt(51);
             String resultMessage = droneData.getDroneID() + ";" + States.SUBMIT_RESULT.name() + ";" + receivedTaskID + ";"
                     + survivors + ";";
+
+            System.out.println("Drone " + droneData.getDroneID() + " COMPLETED scanning and found " + survivors + " survivors.");
 
             byte[] sendingTaskResultBuffer = resultMessage.getBytes();
             DatagramPacket completedTaskPacket = new DatagramPacket(sendingTaskResultBuffer,
@@ -82,7 +109,7 @@ public class Client extends Thread {
             datagramSocket.send(completedTaskPacket);
             System.out.println("Drone " + droneData.getDroneID() + " sent survivors count (" + survivors + ") for task " + receivedTaskID);
 
-        } catch (IOException e) {
+        } catch (Exception e) {
             System.out.println("Task Error: " + e.getMessage());
         }
     }
@@ -92,7 +119,7 @@ public class Client extends Thread {
         InetAddress inetAddress = InetAddress.getByName("localhost");
 
         int i = 100;
-        while (true) {
+        while (availableTasks) {
             i++;
             String DroneID = "DRONE-" + i;
             Client client = new Client(datagramSocket, inetAddress, DroneID);

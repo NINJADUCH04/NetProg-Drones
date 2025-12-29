@@ -2,10 +2,10 @@ package com.example.Server;
 
 import java.io.IOException;
 import java.net.*;
-import java.util.HashMap;
-import java.util.AbstractMap.SimpleEntry;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
+//import java.util.HashMap;
+//import java.util.AbstractMap.SimpleEntry;
+//import java.util.concurrent.ConcurrentHashMap;
+//import java.util.concurrent.ConcurrentMap;
 import com.example.Utils.States;
 import com.example.Model.Coordinate;
 import com.example.Model.Task;
@@ -70,6 +70,18 @@ public class DroneManager extends Thread {
                 System.out.println("Sent task " + assigedTask.getTaskID() + " with 2 points to " + droneID);
             } catch (IOException e) {
                 System.err.println("Failed to send task to " + droneID);
+            }
+        }
+        else {
+            try{
+                String noTaskMessage = "NO_MORE_TASKS";
+                byte[]  noTaskBuffer = noTaskMessage.getBytes();
+                DatagramPacket noTaskPacket = new DatagramPacket(noTaskBuffer, noTaskBuffer.length,clientAddress);
+                skt.send(noTaskPacket);
+                System.out.println("No more tasks available. Sent termination signal to " + droneID);
+
+            }catch(IOException e){
+                System.err.println("Failed to send termination signal to " + droneID);
             }
         }
     }
